@@ -1,0 +1,10 @@
+.sudoku-board{
+    margin: auto;
+    width: 350px;
+    height: 300px;
+    border: 1px solid red;
+}
+.celda{
+    width:30px;
+    border:1px solid black;
+}
