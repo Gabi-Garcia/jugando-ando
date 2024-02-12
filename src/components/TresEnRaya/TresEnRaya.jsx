@@ -2,6 +2,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import './TresEnRaya.css'
 
 
 const TresEnRaya = () => {
@@ -10,6 +11,7 @@ const TresEnRaya = () => {
   const [board, setBoard] = useState(initialBoard);
   const [currentPlayer, setCurrentPlayer] = useState('X');
   const [winner, setWinner] = useState(null);
+
 
   const startGame = () => {
     setIsStarted(true);
@@ -57,7 +59,6 @@ const TresEnRaya = () => {
         return;
       }
     }
-
     // Columnas
     for (let i = 0; i < 3; i++) {
       if (
@@ -69,7 +70,6 @@ const TresEnRaya = () => {
         return;
       }
     }
-
     // Diagonales
     if (
       (currentBoard[0][0] === currentPlayer &&
@@ -82,7 +82,6 @@ const TresEnRaya = () => {
       setWinner(currentPlayer);
       return;
     }
-
     // Empate
     if (!currentBoard.flat().includes(null)) {
       setWinner('Empate');
@@ -97,30 +96,31 @@ const TresEnRaya = () => {
   }, [board, isStarted]);
 
   return (
-    <><div>
-      <h1>Tres en Raya</h1>
-      <button onClick={isStarted ? endGame : startGame}>
-        {isStarted ? 'Terminar Partida' : 'Comenzar Partida'}
-      </button>
-      {isStarted && <p>Es el turno de {currentPlayer}</p>}
-      <div className="board">
-        {board.map((row, rowIndex) => (
-          <div key={rowIndex} className="row">
-            {row.map((cell, colIndex) => (
-              <button
-                key={colIndex}
-                className="cell"
-                onClick={() => handleClick(rowIndex, colIndex)}
-              >
-                {cell}
-              </button>
-            ))}
+    <>
+          <div className='caja'>
+                <h1>Tres en Raya</h1>
+                {isStarted && <p>Es el turno de {currentPlayer}</p>}
+                <div className="board">
+                    {board.map((row, rowIndex) => (
+                      <div key={rowIndex} className="row">
+                          {row.map((cell, colIndex) => (
+                            <button
+                              key={colIndex}
+                              className="cell"
+                              onClick={() => handleClick(rowIndex, colIndex)}
+                            >
+                              {cell}
+                            </button>
+                          ))}
+                      </div>
+                    ))}
+                </div>
+                      <button onClick={isStarted ? endGame : startGame}>
+                        {isStarted ? 'Terminar Partida' : 'Comenzar Partida'}
+                      </button>
+                {winner && <p>{winner === 'Empate' ? '¡Empate!' : `¡Ganador: ${winner}!`}</p>}
           </div>
-        ))}
-      </div>
-      {winner && <p>{winner === 'Empate' ? '¡Empate!' : `¡Ganador: ${winner}!`}</p>}
-    </div>
-    <Link to="/Home">IR JUEGOS</Link>
+          <Link to="/Home">IR JUEGOS</Link>
     </>
   );
 };

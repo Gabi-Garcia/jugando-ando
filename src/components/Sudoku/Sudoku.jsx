@@ -37,25 +37,25 @@ const Sudoku = () => {
 
   return (
     <>
-   
-      <h1>Sudoku</h1>
-      <div className="sudoku-board">
-        {userBoard.map((value, index) => (
-            <input className='celda'
-              key={index}
-              type="text"
-              value={value}
-              onChange={(e) => handleChange(index, e.target.value)}
-              disabled={sudokuBoard[index] !== null}
-              />
-              ))}
-      </div>
-      <button onClick={handleValidate}>Validar</button>
-      {isValid !== null && (
-        <p>{isValid ? '¡Sudoku resuelto correctamente!' : '¡Sudoku incorrecto!'}</p>
-      )}
-      <button onClick={handleRestart}>Nueva Partida</button>
-    
+    <div className='caja'>
+          <h1>Sudoku</h1> 
+          <div className="sudoku-board">
+            {userBoard.map((value, index) => (
+                <input className='celda'
+                  key={index}
+                  type="text"
+                  value={value}
+                  onChange={(e) => handleChange(index, e.target.value)}
+                  disabled={sudokuBoard[index] !== null}
+                  />
+                  ))}
+          </div>
+          <button onClick={handleValidate}>Validar</button>
+          {isValid !== null && (
+            <p>{isValid ? '¡Sudoku resuelto correctamente!' : '¡Sudoku incorrecto!'}</p>
+          )}
+          <button onClick={handleRestart}>Nueva Partida</button>
+    </div>
     <Link to="/Home">IR JUEGOS</Link>
     </>
   );
