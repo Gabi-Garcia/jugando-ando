@@ -1,15 +1,8 @@
-.caja{
-    width: 80%;
-    height: 100vh;
-    margin: auto; 
-    border: 1px solid red;
-}
+
 .board{
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-between;
     width:300px;
-    /* height: 50vh; */
     margin: auto;
 }
 p{
@@ -21,6 +14,7 @@ button{
    
 }
 button.cell{
+    background-color: white;
     width: 100px;
     height: 100px;
     padding: 10px;

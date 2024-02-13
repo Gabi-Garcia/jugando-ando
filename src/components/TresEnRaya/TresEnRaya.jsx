@@ -98,6 +98,7 @@ const TresEnRaya = () => {
   return (
     <>
           <div className='caja'>
+    <Link to="/Home">IR JUEGOS</Link>
                 <h1>Tres en Raya</h1>
                 {isStarted && <p>Es el turno de {currentPlayer}</p>}
                 <div className="board">
@@ -120,7 +121,6 @@ const TresEnRaya = () => {
                       </button>
                 {winner && <p>{winner === 'Empate' ? '¡Empate!' : `¡Ganador: ${winner}!`}</p>}
           </div>
-          <Link to="/Home">IR JUEGOS</Link>
     </>
   );
 };
