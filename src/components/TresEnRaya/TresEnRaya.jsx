@@ -3,27 +3,28 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './TresEnRaya.css'
+import MyButton from '../Button/Button';
 
 
 const TresEnRaya = () => {
   const initialBoard = Array(3).fill(null).map(() => Array(3).fill(null));
   const [isStarted, setIsStarted] = useState(false);
   const [board, setBoard] = useState(initialBoard);
-  const [currentPlayer, setCurrentPlayer] = useState('X');
+  const [currentPlayer, setCurrentPlayer] = useState('🎸');
   const [winner, setWinner] = useState(null);
 
 
   const startGame = () => {
     setIsStarted(true);
     setBoard(initialBoard);
-    setCurrentPlayer('X');
+    setCurrentPlayer('🎸');
     setWinner(null);
   };
 
   const endGame = () => {
     setIsStarted(false);
     setBoard(initialBoard);
-    setCurrentPlayer('X');
+    setCurrentPlayer('🎸'); 
     setWinner(null);
   };
 
@@ -42,7 +43,7 @@ const TresEnRaya = () => {
   };
 
   const togglePlayer = () => {
-    setCurrentPlayer(currentPlayer === 'X' ? 'O' : 'X');
+    setCurrentPlayer(currentPlayer === '🎸' ? '🎻' : '🎸');
   };
 
   const checkWinner = (currentBoard) => {
@@ -98,9 +99,9 @@ const TresEnRaya = () => {
   return (
     <>
           <div className='caja'>
-    <Link to="/Home">IR JUEGOS</Link>
-                <h1>Tres en Raya</h1>
-                {isStarted && <p>Es el turno de {currentPlayer}</p>}
+                <h1>Tres en Línea</h1>
+                <div className='texto'>{isStarted && <p>Es el turno de {currentPlayer}</p>}</div>
+                  <div className='texto2'>{winner && <p>{winner === 'Empate' ? '¡ 🤭 HAN EMPATADO !' : `¡ 😀 Felicitaciones has GANADO ${winner}!`}</p>}</div> 
                 <div className="board">
                     {board.map((row, rowIndex) => (
                       <div key={rowIndex} className="row">
@@ -116,10 +117,16 @@ const TresEnRaya = () => {
                       </div>
                     ))}
                 </div>
-                      <button onClick={isStarted ? endGame : startGame}>
+                        <div className='partida'>
+                        <button className='buttonButton' onClick={isStarted ? endGame : startGame}>
                         {isStarted ? 'Terminar Partida' : 'Comenzar Partida'}
-                      </button>
-                {winner && <p>{winner === 'Empate' ? '¡Empate!' : `¡Ganador: ${winner}!`}</p>}
+                        </button>
+                        </div>
+                    
+
+                       <div className="miButton">
+                       <MyButton ><Link to="/Home">IR JUEGOS</Link></MyButton>
+                       </div>
           </div>
     </>
   );

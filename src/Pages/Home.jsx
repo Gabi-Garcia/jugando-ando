@@ -13,13 +13,13 @@ const Home = () => {
             <nav>
               <ul>
                 <li>
-                  <Link to="/tresEnRaya"><img className="card" src="/src/assets/tres.png" alt="Tres en Línea" /><p>Tres en Línea</p></Link>
+                  <Link to="/tresEnRaya"><img className="card" src="/tres.png" alt="Tres en Línea" /><p>Tres en Línea</p></Link>
                 </li>
                 <li>
-                  <Link to="/ahorcado"><img className="card" src="/src/assets/video.png" alt="¿Cuánto sabes de Música?" /><p>¿Cuánto sabes de Música?</p></Link>
+                  <Link to="/ahorcado"><img className="card" src="/video.png" alt="¿Cuánto sabes de Música?" /><p>¿Cuánto sabes de Música?</p></Link>
                 </li>
                 <li>
-                  <Link to="/sudoku"><img className="card" src="/src/assets/sudoku.png" alt="Sudoku" /><p>Sudoku</p></Link>
+                  <Link to="/sudoku"><img className="card" src="/sudoku.png" alt="Sudoku" /><p>Sudoku</p></Link>
                 </li>
               </ul>
             </nav>

@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import sudoku from 'sudoku';
 import { Link } from 'react-router-dom';
 import './Sudoku.css'
+import MyButton from '../Button/Button'
 
 const Sudoku = () => {
   const [sudokuBoard, setSudokuBoard] = useState(null);
@@ -39,24 +40,27 @@ const Sudoku = () => {
     <>
     <div className='caja'>
           <h1>Sudoku</h1> 
+            {isValid !== null && (
+                    <div className='texto'><p>{isValid ? '¡ 😃 Sudoku resuelto correctamente!' : '¡ 😐 Sudoku incorrecto! ¡Inténtalo nuevamente!' }</p></div>
+            )}
           <div className="sudoku-board">
             {userBoard.map((value, index) => (
-                <input className='celda'
-                  key={index}
-                  type="text"
-                  value={value}
-                  onChange={(e) => handleChange(index, e.target.value)}
-                  disabled={sudokuBoard[index] !== null}
-                  />
-                  ))}
+              <input className='celda'
+              key={index}
+              type="text"
+              value={value}
+              onChange={(e) => handleChange(index, e.target.value)}
+              disabled={sudokuBoard[index] !== null}
+              />
+              ))
+            }
           </div>
-          <button onClick={handleValidate}>Validar</button>
-          {isValid !== null && (
-            <p>{isValid ? '¡Sudoku resuelto correctamente!' : '¡Sudoku incorrecto!'}</p>
-          )}
-          <button onClick={handleRestart}>Nueva Partida</button>
+          <div className='botones'>
+          <button className='buttonButton' onClick={handleValidate}>Validar</button>
+          <button className='buttonButton' onClick={handleRestart}>Nueva Partida</button>
+          </div>
     </div>
-    <Link to="/Home">IR JUEGOS</Link>
+    <MyButton><Link to="/Home">IR JUEGOS</Link></MyButton>
     </>
   );
 };

@@ -5,12 +5,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Ahorcado.css';
+import MyButton from '../Button/Button';
 // eslint-disable-next-line no-unused-vars
 //import MiComponente from '../Funciones/MiComponente';
 
 
 const Ahorcado = () => {
-  const palabras = ['coche', 'computadora', 'programacion', 'javascript', 'react', 'desarrollo'];
+  const palabras = ['melodia', 'jazz', 'saxofon', 'compositor', 'rock', 'piano', 'bach', 'cancion', 'violin', 'electronica'];
   const intentosMaximos = 6;
 
   const [palabra, setPalabra] = useState('');
@@ -78,10 +79,11 @@ const Ahorcado = () => {
   return (
     <>
     <div className='caja'>
-      <h1>Ahorcado</h1>
+      <h1>¿Lo tienes?</h1>
       <div className='caja2'>
       <div className='segundaCaja'>
           <p>Palabra: {pista.join(' ')}</p>
+          <div className='botones'>
           <input
             type="text"
             maxLength="1"
@@ -90,23 +92,26 @@ const Ahorcado = () => {
             // eslint-disable-next-line no-unused-vars
             onChange={(e) => setValor(e.target.value.toLowerCase())}
             />
-          <button onClick={manejarInputLetra}>VER LETRA</button>
-          <button onClick={borrarLetra}>BORRAR LETRA</button>
+            <button className="buttonButton" onClick={manejarInputLetra}>VER LETRA</button>
+            <button className="buttonButton" onClick={borrarLetra}>BORRAR LETRA</button>
+          </div> 
       </div>
       <div className='terceraCaja'>
-          {estadoJuego === 'ganado' && <p>¡Has Ganado😀!</p>}
-          {estadoJuego === 'perdido' && <p>¡Has Perdido😶! La palabra era: {palabra}</p>}
+          {estadoJuego === 'ganado' && <p>¡ 😀 Has Ganado!</p>}
+          {estadoJuego === 'perdido' && <p>¡ 😶 Has Perdido! La palabra era: {palabra}</p>}
           {estadoJuego === 'enJuego' && (
-            <div>
-              <p>Letras Usadas: {letrasUsadas.join('-')}</p>
-            </div>
+            <div className='cajaDerecha'>
+               <p>Letras Usadas: {letrasUsadas.join('-')}</p>
+               <p>Intentos Restantes: {intentosRestantes}</p>
+             </div>
           )}
-          <p>Intentos Restantes: {intentosRestantes}</p>
+          <button className="buttonButton" onClick={empezarPartida}> Nueva Partida </button>
       </div> 
       </div>
-      <button onClick={empezarPartida}>Nueva Partida</button>
     </div>
-    <Link to="/Home">IR JUEGOS</Link>
+    <div className="miButton">
+      <MyButton ><Link to="/Home">IR JUEGOS</Link></MyButton>
+    </div>
     </>
   );
 };
