@@ -49,7 +49,7 @@ a{
  
 }
 .imagen{
-  background-image: url('./PosterTaller.png');
+  background-image: url('../../juegos/public/PosterTaller.png');
   background-size:cover;
   background-repeat:no-repeat;
   width: 100%;
