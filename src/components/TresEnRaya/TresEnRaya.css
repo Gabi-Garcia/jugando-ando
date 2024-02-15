@@ -14,7 +14,7 @@
   margin-left:200px;
   margin-top: 50px;
   /* border: 1px solid red; */
-}
+} 
 .caja > .texto2{
   position:absolute;
   width: 30%;
@@ -36,19 +36,11 @@ button.cell{
     display: block;
     border: 1px solid green;
 }
-.miButton{
-  width: 20%;
-  text-align: center;
-  margin: auto;
-  margin-top: 50px;
-  /* border: 1px solid violet;
-} */
-}
 .partida{
   width: 20%;
   text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
   margin: auto;
   margin-left: 57%;
   /* border: 1px solid white; */

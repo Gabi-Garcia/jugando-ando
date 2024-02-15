@@ -1,3 +1,7 @@
+.caja{
+    height: 70vh;
+    /* border: 1px solid red; */
+}
 .caja2{
     display: flex;
     justify-content: space-around;
@@ -9,18 +13,19 @@
 }
 .segundaCaja{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 60%;
     color: white;
-  
-    /* border: 1px solid rgb(136, 255, 0); */
+    border: 1px solid white;
+    border-radius:5px;
 }
 .segundaCaja > p, .terceraCaja > p{
     font-size: 2rem;
     text-align: left;
     margin-left: 10px;
     color: white;
-    width: auto;
+    width:55%;
     padding: 5px;
     /* border: 1px solid red; */
 }
@@ -59,17 +64,10 @@ input{
     flex-direction: row;
     gap: 10px;
     padding: 5px;
-    margin-top: 50px;
+    margin-top:0px;
     justify-content: space-around;
     /* border: 1px solid red; */
 }
 .cajaDerecha >.buttonButton{
     margin-left:300px ;
-}
-.miButton{
-    width: 40%;
-    text-align: center;
-    margin: auto;
-    margin-top: 50px;
-    /* border: 1px solid violet; */
 }

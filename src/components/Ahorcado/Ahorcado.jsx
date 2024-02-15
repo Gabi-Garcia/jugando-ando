@@ -84,7 +84,7 @@ const Ahorcado = () => {
       <div className='segundaCaja'>
           <p>Palabra: {pista.join(' ')}</p>
           <div className='botones'>
-          <input
+            <input
             type="text"
             maxLength="1"
             placeholder='Introduce una letra'
@@ -103,15 +103,13 @@ const Ahorcado = () => {
             <div className='cajaDerecha'>
                <p>Letras Usadas: {letrasUsadas.join('-')}</p>
                <p>Intentos Restantes: {intentosRestantes}</p>
-             </div>
+             </div> 
           )}
           <button className="buttonButton" onClick={empezarPartida}> Nueva Partida </button>
       </div> 
       </div>
     </div>
-    <div className="miButton">
-      <MyButton ><Link to="/Home">IR JUEGOS</Link></MyButton>
-    </div>
+      <MyButton><Link to="/Home">IR JUEGOS</Link></MyButton>
     </>
   );
 };

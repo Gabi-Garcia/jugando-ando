@@ -13,7 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   overflow-x: hidden;
-  /* overflow-y: hidden; */
+  overflow-y: hidden;
   list-style: none;
   text-decoration: none;
 
@@ -46,5 +46,4 @@ a{
   &:focus {
     outline: none; /* Elimina el contorno al hacer clic */
   }
- 
 }

@@ -46,7 +46,7 @@ const Sudoku = () => {
           <div className="sudoku-board">
             {userBoard.map((value, index) => (
               <input className='celda'
-              key={index}
+              key={index} 
               type="text"
               value={value}
               onChange={(e) => handleChange(index, e.target.value)}

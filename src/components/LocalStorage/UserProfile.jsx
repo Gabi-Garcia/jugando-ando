@@ -15,8 +15,8 @@ const UserProfile = () => {
   });
 
   // Función para manejar cambios en los campos del formulario
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
+  const handleInputChange = (e) => { 
+    const { name, value } = e.target; 
     setUserInfo((prevUserInfo) => ({
       ...prevUserInfo,
       [name]: value,
@@ -39,9 +39,12 @@ const UserProfile = () => {
     }
   };
   return (
-    <div>
-      <h2>User Profile</h2>
-      <form onSubmit={handleSubmit}>
+    <>
+    <div className='cajaForm'>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum optio, 
+         nesciunt officia ducimus ipsum quasi deserunt dolorum.
+        </p>
+      <form  className="formulario"onSubmit={handleSubmit}>
         <label>
           Usuario:
           <input
@@ -50,8 +53,7 @@ const UserProfile = () => {
             value={userInfo.username}
             onChange={handleInputChange}
           />
-        </label>
-        <br />
+        </label> 
         <label>
         Contraseña:
           <input
@@ -61,11 +63,11 @@ const UserProfile = () => {
             onChange={handleInputChange}
           />
         </label>
-        <br />
         {/* Agrega más campos según sea necesario */}
-        <button type="submit">Guardar</button>
+        <button  className="buttonButton" type="submit">Guardar</button>
       </form>
     </div>
+    </>
   );
 };
 

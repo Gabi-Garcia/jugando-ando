@@ -10,21 +10,21 @@ const TresEnRaya = () => {
   const initialBoard = Array(3).fill(null).map(() => Array(3).fill(null));
   const [isStarted, setIsStarted] = useState(false);
   const [board, setBoard] = useState(initialBoard);
-  const [currentPlayer, setCurrentPlayer] = useState('🎸');
+  const [currentPlayer, setCurrentPlayer] = useState('🟥');
   const [winner, setWinner] = useState(null);
 
 
   const startGame = () => {
     setIsStarted(true);
     setBoard(initialBoard);
-    setCurrentPlayer('🎸');
+    setCurrentPlayer('🟥');
     setWinner(null);
   };
 
   const endGame = () => {
     setIsStarted(false);
     setBoard(initialBoard);
-    setCurrentPlayer('🎸'); 
+    setCurrentPlayer('🟥'); 
     setWinner(null);
   };
 
@@ -43,7 +43,7 @@ const TresEnRaya = () => {
   };
 
   const togglePlayer = () => {
-    setCurrentPlayer(currentPlayer === '🎸' ? '🎻' : '🎸');
+    setCurrentPlayer(currentPlayer === '🟥' ? '🔴' : '🟥');
   };
 
   const checkWinner = (currentBoard) => {
@@ -122,12 +122,10 @@ const TresEnRaya = () => {
                         {isStarted ? 'Terminar Partida' : 'Comenzar Partida'}
                         </button>
                         </div>
-                    
-
-                       <div className="miButton">
-                       <MyButton ><Link to="/Home">IR JUEGOS</Link></MyButton>
-                       </div>
           </div>
+                       <div className="miButtonTresEnLinea">
+                       <MyButton><Link to="/Home">IR JUEGOS</Link></MyButton>
+                       </div>
     </>
   );
 };

@@ -6,8 +6,10 @@ import TresEnRaya from './components/TresEnRaya/TresEnRaya';
 import Ahorcado from './components/Ahorcado/Ahorcado';
 import Sudoku from './components/Sudoku/Sudoku';
 import UserProfile from'./components/LocalStorage/UserProfile';
-import Home from './Pages/Home';
+import Home from './Pages/Home/Home';
 import './App.css'
+import Footer from './components/Footer/Footer';
+import About from './Pages/About/About';
 
 const App = () => {
   return (
@@ -15,6 +17,7 @@ const App = () => {
     <div className='imagen'>
       <Router>
           <Routes>
+              <Route path='/About' element={<About />} />
               <Route path="/home" element={<Home />} />
               <Route path="/" element={<UserProfile />} />
               <Route path="/tresEnRaya" element={<TresEnRaya />} />
@@ -22,6 +25,7 @@ const App = () => {
               <Route path="/sudoku" element={<Sudoku />} />
           </Routes>
       </Router>
+      <Footer />
       </div>
     </>
   );

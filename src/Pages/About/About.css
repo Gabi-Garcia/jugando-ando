@@ -1,0 +1,17 @@
+.about{
+    position: absolute;
+    text-align: center;
+    padding: 50px;
+    width: 70%;
+    margin: 150px;
+    margin-left: 200px;
+    border: 1px solid white;
+}
+h2{
+    width: 40%;
+    color: white;
+    margin: auto;
+}
+p{
+    color: white;
+}

@@ -14,15 +14,16 @@ nav{
     flex-wrap: wrap;
     padding: 0px;
     width: 100%;
-    height:50vh;
+    height:60vh;
     /* border: 1px solid blue; */
 }
 nav > ul{ 
-    width: 90%;
+    width: 70%;
     height: 60vh;
     margin: auto;
-    margin-top:30px;
+    margin-top:80px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     text-decoration: none;
     justify-content: space-around;
@@ -30,14 +31,16 @@ nav > ul{
 }
 nav > ul > li{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     list-style: none;
     text-decoration: none;
-    justify-content: space-between;
-    width: 30%;
-    height:80%;
+    /* justify-content: space-between; */
+    width: 150px;
+    height:150px;
     margin-top: 10px;
-    background-color: rgb(160, 154, 154);
+    padding: 20px;
+    background-color: rgb(196, 188, 188);
     /* border: 1px solid red; */
 }
 nav>ul>li>a{
@@ -47,21 +50,22 @@ nav>ul>li>a{
     /* border: 1px solid white; */
 }
 .card{
- margin-top: 30px;   
- margin-left: 50px;
- width: 250px;
- height: 250px; 
- /* border: 1px solid yellow; */
+    margin-top: 0px;   
+    margin-left:20px;
+ width: 110px;
+ height: 110px; 
+ /* border: 1px solid violet; */
 }
 .card img{
     width: 100%;
     height: 100%;
 }
-p{
+.home{
+    margin-top: 0px;
     font-weight: bold;
     text-align: center;
-    font-size: 1.5rem;
-    color: white;
+    font-size: 1rem;
+    color: black;
 }
 footer{
     margin-top:150px;
