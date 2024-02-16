@@ -67,7 +67,7 @@ nav>ul>li>a{
     font-size: 1rem;
     color: black;
 }
-footer{
+/* footer{
     margin-top:150px;
     height: 50px;
     width: 100%;
@@ -76,4 +76,3 @@ footer{
     color: white;
     font-weight: bold;
     /* border: 1px solid white; */
-}

@@ -6,10 +6,11 @@ import styled from 'styled-components';
 
 
 const Button = styled.button`
+  position: fixed;
   width: 150px;
   height: 40px;
-  margin-left: 30px;
-  margin-top:50px;
+  margin-left:35px;
+  margin-top:25px;
   background-color: #3498db; /* Color de fondo azul */
   color: #fff; /* Color del texto blanco */
   border: none;

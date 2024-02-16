@@ -3,6 +3,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './Home.css'
+import Footer from '../../components/Footer/Footer';
 
 
 const Home = () => {
@@ -28,6 +29,7 @@ const Home = () => {
             </nav>
         {/* <footer>SOY EL FOOTER</footer> */}
         </div>
+        <Footer />
     </>
         )
 }

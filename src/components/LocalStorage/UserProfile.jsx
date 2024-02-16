@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 
 import { useNavigate } from 'react-router-dom';
 import './UserProfile.css'
+import Footer from '../Footer/Footer';
 
 
 const UserProfile = () => {
@@ -41,8 +42,8 @@ const UserProfile = () => {
   return (
     <>
     <div className='cajaForm'>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum optio, 
-         nesciunt officia ducimus ipsum quasi deserunt dolorum.
+      <p>¡Te damos la bienvenida a nuestra aplicación de juegos! Para comenzar la diversión,
+         simplemente ingresa tu nombre de usuario y contraseña! 
         </p>
       <form  className="formulario"onSubmit={handleSubmit}>
         <label>
@@ -67,6 +68,7 @@ const UserProfile = () => {
         <button  className="buttonButton" type="submit">Guardar</button>
       </form>
     </div>
+    <Footer />
     </>
   );
 };

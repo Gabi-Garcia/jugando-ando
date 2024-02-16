@@ -101,7 +101,7 @@ const TresEnRaya = () => {
           <div className='caja'>
                 <h1>Tres en Línea</h1>
                 <div className='texto'>{isStarted && <p>Es el turno de {currentPlayer}</p>}</div>
-                  <div className='texto2'>{winner && <p>{winner === 'Empate' ? '¡ 🤭 HAN EMPATADO !' : `¡ 😀 Felicitaciones has GANADO ${winner}!`}</p>}</div> 
+                  <div className='texto2'>{winner && <p>{winner === 'Empate' ? '¡🤭HAY EMPATE!' : `¡😀 HA GANADO ${winner}!`}</p>}</div> 
                 <div className="board">
                     {board.map((row, rowIndex) => (
                       <div key={rowIndex} className="row">

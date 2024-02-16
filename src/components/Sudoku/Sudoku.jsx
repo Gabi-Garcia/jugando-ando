@@ -41,7 +41,7 @@ const Sudoku = () => {
     <div className='caja'>
           <h1>Sudoku</h1> 
             {isValid !== null && (
-                    <div className='texto'><p>{isValid ? '¡ 😃 Sudoku resuelto correctamente!' : '¡ 😐 Sudoku incorrecto! ¡Inténtalo nuevamente!' }</p></div>
+                    <div className='textoSudoku'><p>{isValid ? '¡ 😃 Sudoku resuelto correctamente!' : '¡ 😐 Sudoku incorrecto! ¡Inténtalo nuevamente!' }</p></div>
             )}
           <div className="sudoku-board">
             {userBoard.map((value, index) => (

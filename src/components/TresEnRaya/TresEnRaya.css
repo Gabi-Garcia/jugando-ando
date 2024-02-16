@@ -8,6 +8,7 @@
 
 .caja > .texto{
   position:absolute;
+  text-align: center;
   width: 20%;
   color: white;
   font-size: 2rem;
@@ -17,11 +18,12 @@
 } 
 .caja > .texto2{
   position:absolute;
-  width: 30%;
+  width:25%;
   color: white;
   font-size: 2rem;
-  margin-left:800px;
+  margin-left:825px;
   margin-top: 50px;
+  text-align: center;
 }
 .texto > p, .texto2 > p{
   font-size: 2rem;

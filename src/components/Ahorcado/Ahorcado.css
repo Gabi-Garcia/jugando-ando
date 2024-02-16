@@ -2,32 +2,47 @@
     height: 70vh;
     /* border: 1px solid red; */
 }
+.subtitulo{
+    width:45%;
+    margin: auto;
+    margin-top: 30px;
+    font-size:1.1rem; 
+    font-weight: 600;
+    padding: 7px;
+    border-radius: 7px;
+    color: white;
+    background-color: rgba(19, 18, 18, 0.671);
+    /* border: 1px solid violet; */
+}
 .caja2{
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     width: 90%;
     height: 40vh;
     margin: auto;
-    padding: 20px;
+    margin-top:20px;
+    padding: 10px;
     /* border: 1px solid yellow; */
 }
 .segundaCaja{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    width: 60%;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
     color: white;
-    border: 1px solid white;
-    border-radius:5px;
+  
 }
 .segundaCaja > p, .terceraCaja > p{
-    font-size: 2rem;
-    text-align: left;
+    font-size: 1.5rem;
+    /* text-align: left; */
     margin-left: 10px;
     color: white;
-    width:55%;
-    padding: 5px;
-    /* border: 1px solid red; */
+    width:45%;
+    padding: 7px;
+    border: 1px solid white;
+    border-radius: 7px;
 }
 .terceraCaja{
     width: 40%;
@@ -53,8 +68,8 @@ input{
     color: white;
     width: auto;
     padding: 5px;
-    border-radius: 7px;
     border: 1px solid white;
+    border-radius: 7px;
 }
 .botones{
     width: 60%;
@@ -68,6 +83,8 @@ input{
     justify-content: space-around;
     /* border: 1px solid red; */
 }
-.cajaDerecha >.buttonButton{
-    margin-left:300px ;
+.terceraCaja > .buttonButton{
+    margin-left:30px;
+    margin-top: 50px;
+    /* border: 1px solid violet; */
 }

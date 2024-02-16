@@ -1,9 +1,9 @@
 .about{
-    position: absolute;
+    position: fixed;
     text-align: center;
-    padding: 50px;
+    padding:10px;
     width: 70%;
-    margin: 150px;
+    margin-top:160px;
     margin-left: 200px;
     border: 1px solid white;
 }
@@ -12,6 +12,8 @@ h2{
     color: white;
     margin: auto;
 }
-p{
-    color: white;
+.textoAbout{
+    padding: 5px;
+    font-weight: 700;
+    color: rgb(223, 217, 217);
 }

@@ -17,3 +17,13 @@
     margin: auto;
     /* border: 1px solid red; */
 }
+.textoSudoku{
+  position:absolute;
+  text-align: center;
+  width: 20%;
+  color: white;
+  font-size: 2rem;
+  margin-left:200px;
+  margin-top: 50px;
+  border: 1px solid white;
+}

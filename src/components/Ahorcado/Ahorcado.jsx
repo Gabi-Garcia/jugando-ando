@@ -80,6 +80,7 @@ const Ahorcado = () => {
     <>
     <div className='caja'>
       <h1>¿Lo tienes?</h1>
+      <p className='subtitulo'>Tienes 6 oportunidades por cada palabra, que la Música esté contigo</p>
       <div className='caja2'>
       <div className='segundaCaja'>
           <p>Palabra: {pista.join(' ')}</p>
@@ -97,8 +98,8 @@ const Ahorcado = () => {
           </div> 
       </div>
       <div className='terceraCaja'>
-          {estadoJuego === 'ganado' && <p>¡ 😀 Has Ganado!</p>}
-          {estadoJuego === 'perdido' && <p>¡ 😶 Has Perdido! La palabra era: {palabra}</p>}
+          {estadoJuego === 'ganado' && <p>¡😀 HAS GANADO!</p>}
+          {estadoJuego === 'perdido' && <p>¡😶 Has Perdido! La palabra era: {palabra}</p>}
           {estadoJuego === 'enJuego' && (
             <div className='cajaDerecha'>
                <p>Letras Usadas: {letrasUsadas.join('-')}</p>

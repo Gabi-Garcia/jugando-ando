@@ -8,7 +8,7 @@ import Sudoku from './components/Sudoku/Sudoku';
 import UserProfile from'./components/LocalStorage/UserProfile';
 import Home from './Pages/Home/Home';
 import './App.css'
-import Footer from './components/Footer/Footer';
+//import Footer from './components/Footer/Footer';
 import About from './Pages/About/About';
 
 const App = () => {
@@ -25,7 +25,7 @@ const App = () => {
               <Route path="/sudoku" element={<Sudoku />} />
           </Routes>
       </Router>
-      <Footer />
+      {/* <Footer /> */}
       </div>
     </>
   );
