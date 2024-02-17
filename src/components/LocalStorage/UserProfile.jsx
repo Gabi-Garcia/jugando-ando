@@ -48,22 +48,22 @@ const UserProfile = () => {
       <form  className="formulario"onSubmit={handleSubmit}>
         <label>
           Usuario:
+          </label> 
           <input
             type="text"
             name="username"
             value={userInfo.username}
             onChange={handleInputChange}
           />
-        </label> 
         <label>
         Contraseña:
+        </label>
           <input
             type="text"
             name="password"
             value={userInfo.password}
             onChange={handleInputChange}
           />
-        </label>
         {/* Agrega más campos según sea necesario */}
         <button  className="buttonButton" type="submit">Guardar</button>
       </form>

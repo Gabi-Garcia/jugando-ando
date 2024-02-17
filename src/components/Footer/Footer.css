@@ -54,16 +54,16 @@
     /*MOBILE*/
     @media(min-width: 320px) and (max-width: 768px){
       .footer footer{
-        display: flex;
+      display: flex;
       flex-wrap: wrap;
       flex-direction: column;
       width:90vw;
       margin: auto;
       bottom: 0;
-      background: rgba(255, 255, 255, 0.30);
+      background: rgba(255, 255, 255, 0.411);
       backdrop-filter: blur(0px);
       border-radius: 5px;
-      margin-top:50px;
+      margin-top:70px;
       margin-bottom: 10px;
       position: relative;
       height: 15vh; 
@@ -98,9 +98,9 @@
         box-sizing: border-box;
         width: 80%;
         display: flex;
-        padding:5px;
-        font-size: 0.9rem;
-        font-weight: 600;
+        /* padding:5px; */
+        font-size: 1rem;
+        font-weight: 700;
         margin: auto;
         margin-top: 5px;
         justify-content: center;
