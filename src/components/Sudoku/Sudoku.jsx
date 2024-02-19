@@ -60,7 +60,9 @@ const Sudoku = () => {
           <button className='buttonButton' onClick={handleRestart}>Nueva Partida</button>
           </div>
     </div>
+    <div className='miButtonSudoku'>
     <MyButton><Link to="/Home">IR JUEGOS</Link></MyButton>
+    </div>
     </>
   );
 };

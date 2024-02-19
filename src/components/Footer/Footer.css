@@ -59,7 +59,7 @@
       flex-direction: column;
       width:90vw;
       margin: auto;
-      bottom: 0;
+      bottom: 0px;
       background: rgba(255, 255, 255, 0.411);
       backdrop-filter: blur(0px);
       border-radius: 5px;
@@ -67,7 +67,6 @@
       margin-bottom: 10px;
       position: relative;
       height: 15vh; 
-      /* border: 1px solid blue; */
       }
       .footer footer ul{
         width: 90vw;

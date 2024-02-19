@@ -88,3 +88,119 @@ input{
     margin-top: 50px;
     /* border: 1px solid violet; */
 }
+
+@media (min-width:320px) and (max-width:768px){
+    .caja{
+        height:80vh;
+        /* border: 1px solid red; */
+    }
+    .subtitulo{
+        width:80%;
+        margin: auto;
+        margin-top: 5px;
+        font-size:0.7rem; 
+        font-weight: 300;
+        text-align: center;
+        padding: 5px;
+        border-radius: 7px;
+        color: white;
+        background-color: rgba(19, 18, 18, 0.671);
+        /* border: 1px solid violet; */
+    }
+    .caja2{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        width: 90%;
+        height: 80vh;
+        margin: auto;
+        margin-top:10px;
+        padding: 0px;
+        /* border: 1px solid yellow; */
+    }
+    .segundaCaja{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+        margin-top: 0px;
+        color: white;
+        /* border:1px solid blue; */
+    }
+    .segundaCaja > p {
+        font-size: 0.8rem;
+        margin-left:0px;
+        color: white;
+        width:90%;
+        padding: 7px;
+        border-radius: 7px;
+        border: 1px solid white;
+    }
+    .terceraCaja {
+        font-size: 0.9rem;
+        /* text-align: left; */
+        margin-left:0px;
+        color: white;
+        width:80%;
+        padding: 0px;
+        border-radius: 7px;
+        /* border: 1px solid violet; */
+    }
+    .terceraCaja > p{
+        font-size: 0.8rem;
+        width: 90%;
+        height: 100px;
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+        /* border: 1px solid rgb(136, 255, 0); */
+    }
+    .botones > input{
+        height:20px;
+        margin: auto;
+        margin-top: 0px;
+        width: 110px;
+    }
+    .cajaDerecha{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        /* border: 1px solid red; */
+    }
+    .cajaDerecha > p{
+        text-align: left;
+        margin-left: 0px;
+        color: white;
+        width: auto;
+        padding: 5px;
+        border: 1px solid white;
+        border-radius: 7px;
+        /* border:1px solid blue; */
+    }
+    .botones{
+        width: 70%;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 5px;
+        padding: 0px;
+        margin-top:30px;
+        justify-content: space-around;
+        /* border: 1px solid red; */
+    }
+    .terceraCaja > .buttonButton{
+        margin-left:0px;
+        margin-top: 15px;
+        /* border: 1px solid violet; */
+    }
+    /* .botones > .buttonButton{
+        width:200px;
+        padding:0px;
+        border: 1px solid yellow;
+    } */
+}

@@ -12,7 +12,7 @@
     width:30px;
     border:1px solid rgb(226, 76, 240);
 } 
-.botones{
+.botones{ 
     width: 30%;
     margin: auto;
     /* border: 1px solid red; */
@@ -26,4 +26,48 @@
   margin-left:200px;
   margin-top: 50px;
   border: 1px solid white;
+}
+/*****MOBILE******/
+@media(min-width:320px) and (max-width:768px){
+    .sudoku-board{
+        /* margin-top:80px;
+        margin-left:500px; */
+        margin: auto;
+        width: 280px;
+        height: 230px;
+        padding: 5px;
+        background-color: white;
+        /* border: 1px solid red; */
+    }
+    .celda{
+        text-align: center;
+        width:25px;
+        border:1px solid green;
+    } 
+    .botones{ 
+        width: 60%;
+        margin: auto;
+        /* border: 1px solid red; */
+    }
+    .textoSudoku{
+     position: absolute;
+      text-align: center;
+      width: 80%;
+      height: 150px;
+      color: black;
+      font-size: 1.5rem;
+      margin-left:25px;
+      margin-top:40px;
+      padding:0px;
+      background-color: white;
+      /* border: 1px solid red; */
+    }
+    
+    .miButtonSudoku{
+        width: 50%;
+        height: 50px;
+        margin-top: 50px;
+        margin-left: 0px;
+        /* border: 1px solid green; */
+      }
 }

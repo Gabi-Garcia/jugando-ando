@@ -47,3 +47,72 @@ button.cell{
   margin-left: 57%;
   /* border: 1px solid white; */
 }
+/******MOBILE****/
+@media(min-width: 320px) and (max-width: 768px){
+  .board{
+    display: flex;
+    justify-content: center;
+    width:280px;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+.caja > .texto{
+  position:absolute;
+  text-align: center;
+  width: 60%;
+  color:white;
+  font-size: 2rem;
+  margin-left:0px;
+  margin-top: 250px;
+  /* border: 1px solid red; */
+} 
+.caja > .texto2{
+  position:absolute;
+  width:70%;
+  color:black;
+  font-size: 1rem;
+  margin-top:35px;
+  margin-right: 0px;
+  margin-left:38px;
+  background-color:white ;
+  text-align: center;
+  /* border: 1px solid yellow; */
+}
+.texto > p{
+  font-size: 1.5rem;
+  color:white;
+  margin: auto;
+  width: 200px;
+  margin-top: 20px;
+  margin-left:70px;
+} 
+.texto2 > p{
+  font-size: 1.5rem;
+  color:black;
+}
+button.cell{ 
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  padding: 10px; 
+  display: block;
+  border: 1px solid green;
+}
+
+.partida{
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+  margin-left: 80px;
+  margin-top:40px;
+  /* border: 1px solid white; */
+}
+.miButtonTresEnLinea{
+  width: 50%;
+  height: 50px;
+  margin-top: 50px;
+  margin-left: 0px;
+  /* border: 1px solid green; */
+}
+}

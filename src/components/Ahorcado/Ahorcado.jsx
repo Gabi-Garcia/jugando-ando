@@ -82,22 +82,22 @@ const Ahorcado = () => {
       <h1>¿Lo tienes?</h1>
       <p className='subtitulo'>Tienes 6 oportunidades por cada palabra, que la Música esté contigo</p>
       <div className='caja2'>
-      <div className='segundaCaja'>
-          <p>Palabra: {pista.join(' ')}</p>
-          <div className='botones'>
-            <input
-            type="text"
-            maxLength="1"
-            placeholder='Introduce una letra'
-            value={valor}
-            // eslint-disable-next-line no-unused-vars
-            onChange={(e) => setValor(e.target.value.toLowerCase())}
-            />
-            <button className="buttonButton" onClick={manejarInputLetra}>VER LETRA</button>
-            <button className="buttonButton" onClick={borrarLetra}>BORRAR LETRA</button>
+          <div className='segundaCaja'>
+              <p>Palabra: {pista.join(' ')}</p>
+                    <div className='botones'>
+                            <input
+                            type="text"
+                            maxLength="1"
+                            placeholder='Introduce una letra'
+                            value={valor}
+                            // eslint-disable-next-line no-unused-vars
+                            onChange={(e) => setValor(e.target.value.toLowerCase())}
+                            />
+                            <button className="buttonButton" onClick={manejarInputLetra}>VER LETRA</button>
+                            <button className="buttonButton" onClick={borrarLetra}>BORRAR LETRA</button>
+                    </div> 
           </div> 
-      </div>
-      <div className='terceraCaja'>
+          <div className='terceraCaja'>
           {estadoJuego === 'ganado' && <p>¡😀 HAS GANADO!</p>}
           {estadoJuego === 'perdido' && <p>¡😶 Has Perdido! La palabra era: {palabra}</p>}
           {estadoJuego === 'enJuego' && (
