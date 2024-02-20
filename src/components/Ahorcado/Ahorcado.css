@@ -193,11 +193,11 @@ input{
         border-radius: 7px;
         border:1px solid blue;
     }
-    .botones{
+    .segundaCaja > .botones{
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-    width:40%;
+        flex-direction: column; 
+    width:50%;
     align-items: center;
     gap: 5px;
     padding: 0px;
