@@ -78,7 +78,7 @@ const Ahorcado = () => {
   
   return (
     <>
-    <div className='caja'>
+    <div className='cajaAhorcado'>
       <h1>¿Lo tienes?</h1>
       <p className='subtitulo'>Tienes 6 oportunidades por cada palabra, que la Música esté contigo</p>
       <div className='caja2'>

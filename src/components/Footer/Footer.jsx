@@ -11,7 +11,7 @@ const Footer = () => {
         <div className='footer'>
               
               <footer>
-                        <ul>
+                <ul>
                   <li>
                     <a href="https://github.com/Gabi-Garcia"  target="_blank" rel="noreferrer" >
                       <div className="imgFooter">
@@ -34,7 +34,7 @@ const Footer = () => {
                     </a>
                   </li>      
                 </ul>
-                <p>Creado por Gabi-Garcia</p>              
+                               <p>Creado por Gabi-Garcia</p>              
               </footer>
         </div>
     </> 

@@ -1,4 +1,4 @@
-.caja{
+.cajaAhorcado{
     height: 70vh;
     /* border: 1px solid red; */
 }
@@ -90,15 +90,15 @@ input{
 }
 
 @media (min-width:320px) and (max-width:768px){
-    .caja{
+    .cajaAhorcado{
         height:80vh;
         /* border: 1px solid red; */
     }
     .subtitulo{
-        width:80%;
+        width:95%;
         margin: auto;
-        margin-top: 5px;
-        font-size:0.7rem; 
+        margin-top: 0px;
+        font-size:0.6rem; 
         font-weight: 300;
         text-align: center;
         padding: 5px;
@@ -109,12 +109,12 @@ input{
     }
     .caja2{
         display: flex;
-        flex-direction: row;
+        flex-direction:column;
         justify-content:center;
-        width: 90%;
-        height: 80vh;
+        width: 95%;
+        height: 50vh;
         margin: auto;
-        margin-top:10px;
+        margin-top:0px;
         padding: 0px;
         /* border: 1px solid yellow; */
     }
@@ -124,35 +124,44 @@ input{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 50%;
-        margin-top: 0px;
+        width: 90%;
+        height:240px;
+        margin: auto;
+        padding: 0px;
+        margin-top: 30px;
         color: white;
         /* border:1px solid blue; */
     }
     .segundaCaja > p {
-        font-size: 0.8rem;
+        font-size: 1rem;
         margin-left:0px;
         color: white;
-        width:90%;
+        width:70%;
         padding: 7px;
         border-radius: 7px;
         border: 1px solid white;
     }
     .terceraCaja {
-        font-size: 0.9rem;
-        /* text-align: left; */
-        margin-left:0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-self: center;
+        align-items: center;
+        font-size: 0.7rem;
+        margin:auto;
+        margin-top: 0px;
         color: white;
         width:80%;
+        height: 30vh;
         padding: 0px;
         border-radius: 7px;
         /* border: 1px solid violet; */
     }
     .terceraCaja > p{
-        font-size: 0.8rem;
-        width: 90%;
-        height: 100px;
+        font-size: 1rem;
+        width: 80%;
+        height: 50px;
+        margin-top: 5px;
         text-align: center;
         border-radius: 5px;
         border: none;
@@ -163,9 +172,11 @@ input{
         margin: auto;
         margin-top: 0px;
         width: 110px;
+        /* border: 1px solid green; */
     }
     .cajaDerecha{
         width: 90%;
+        padding: 0px;
         display: flex;
         flex-direction: column;
         margin: auto;
@@ -177,21 +188,20 @@ input{
         color: white;
         width: auto;
         padding: 5px;
-        border: 1px solid white;
         border-radius: 7px;
-        /* border:1px solid blue; */
+        border:1px solid blue;
     }
     .botones{
-        width: 70%;
-        align-items: center;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        gap: 5px;
-        padding: 0px;
-        margin-top:30px;
-        justify-content: space-around;
-        /* border: 1px solid red; */
+    width: 100%;
+    align-items: center;
+    gap: 5px;
+    padding: 0px;
+    margin-top:20px;
+    justify-content: center;
+    /* border: 1px solid red; */
     }
     .terceraCaja > .buttonButton{
         margin-left:0px;

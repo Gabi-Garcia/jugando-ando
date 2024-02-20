@@ -69,6 +69,10 @@ nav>ul>li>a{
 }
 /*****MOBILE*****/
 @media(min-width: 320px) and (max-width: 768px){
+    .caja{
+        height: 70vh;
+        /* border: 1px solid green; */
+    }
     h1{
         margin: auto;
         margin-top: 0px;
@@ -91,7 +95,7 @@ nav>ul>li>a{
     }
     nav > ul{ 
         width: 100%;
-        height: 55vh;
+        height: 50vh;
         margin-top:10px;
         margin-left: 5px;
         padding: 15px;
@@ -113,15 +117,16 @@ nav>ul>li>a{
         align-items: center;
         width: 110px;
         height:110px;
-        padding: 5px;
+        padding: 2px;
+        margin: auto;
         background-color: rgb(196, 188, 188);
         /* border: 1px solid red; */
     }
     .card{
         margin-top: 0px;   
         margin-left:0px;
-        width: 60px;
-        height: 60px; 
+        width: 55px;
+        height: 55px; 
      /* border: 1px solid violet; */
     }
     .card img{
