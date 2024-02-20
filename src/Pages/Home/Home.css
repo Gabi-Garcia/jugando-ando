@@ -79,7 +79,7 @@ nav>ul>li>a{
 @media(min-width: 320px) and (max-width: 768px){
     .cajaHome{
         height: 70vh;
-        border: 1px solid green;
+        /* border: 1px solid green; */
     }
     h1{
         margin: auto;
@@ -111,7 +111,7 @@ nav>ul>li>a{
         flex-wrap: wrap;
         flex-direction: row;
         text-decoration: none;
-        border: 1px solid yellow;
+        /* border: 1px solid yellow; */
     }
     nav > ul > li{
         display: flex;
