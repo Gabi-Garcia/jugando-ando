@@ -3,8 +3,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
-
 const Button = styled.button`
   position: fixed;
   width: 150px;

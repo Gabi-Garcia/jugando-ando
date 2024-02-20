@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 import { useNavigate } from 'react-router-dom';
 import './UserProfile.css'
-import Footer from '../Footer/Footer';
+import Footer from '../../components/Footer/Footer';
 
 
 const UserProfile = () => {
@@ -68,9 +68,10 @@ const UserProfile = () => {
         <button  className="buttonButton" type="submit">Guardar</button>
       </form>
     </div>
+    <div className='footerUserProfile'>
     <Footer />
+    </div>
     </>
   );
 };
-
 export default UserProfile;

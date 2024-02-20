@@ -5,12 +5,11 @@ import React from 'react'
 import './Footer.css'
 
 
-const Footer = () => {
+const Footer = () => { 
   return (
     <>
         <div className='footer'>
               
-              <footer>
                 <ul>
                   <li>
                     <a href="https://github.com/Gabi-Garcia"  target="_blank" rel="noreferrer" >
@@ -34,8 +33,7 @@ const Footer = () => {
                     </a>
                   </li>      
                 </ul>
-                               <p>Creado por Gabi-Garcia</p>              
-              </footer>
+                    <p>Creado por Gabi-Garcia</p>             
         </div>
     </> 
   )

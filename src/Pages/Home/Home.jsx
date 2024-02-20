@@ -4,14 +4,15 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import './Home.css'
 import Footer from '../../components/Footer/Footer';
+//import MyButton from '../../components/Button/Button';
 
 
 const Home = () => {
    return(
     <>
-        <div className='caja'>
+        <div className='cajaHome'>
           <h1>A JUGAR</h1>
-            <nav>
+            <nav> 
               <ul>
                 <li>
                   <Link to="/tresEnRaya"><img className="card" src="/tres.png" alt="Tres en Línea" /><p className='home'>Tres en Línea</p></Link>
@@ -27,11 +28,12 @@ const Home = () => {
                 </li>
               </ul>
             </nav>
-        {/* <footer>SOY EL FOOTER</footer> */}
         </div>
+        <div className='footerHome'>
         <Footer />
+        </div>
     </>
         )
-}
+      }
 
 export default Home
