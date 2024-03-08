@@ -2,13 +2,12 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
-import TresEnRaya from './components/TresEnRaya/TresEnRaya';
-import Ahorcado from './components/Ahorcado/Ahorcado';
-import Sudoku from './components/Sudoku/Sudoku';
+import TresEnRaya from './Pages/TresEnRaya/TresEnRaya';
+import Ahorcado from './Pages/Ahorcado/Ahorcado';
+import Sudoku from './Pages/Sudoku/Sudoku';
 import UserProfile from'./components/LocalStorage/UserProfile';
 import Home from './Pages/Home/Home';
 import './App.css'
-//import Footer from './components/Footer/Footer';
 import About from './Pages/About/About';
 
 const App = () => {
@@ -17,15 +16,14 @@ const App = () => {
     <div className='imagen'>
       <Router>
           <Routes>
-              <Route path='/About' element={<About />} />
-              <Route path="/home" element={<Home />} />
               <Route path="/" element={<UserProfile />} />
-              <Route path="/tresEnRaya" element={<TresEnRaya />} />
-              <Route path="/ahorcado" element={<Ahorcado />} />
-              <Route path="/sudoku" element={<Sudoku />} />
+              <Route path="/Home" element={<Home />} />
+              <Route path='/About' element={<About />} />
+              <Route path="/TresEnRaya" element={<TresEnRaya />} />
+              <Route path="/Ahorcado" element={<Ahorcado />} />
+              <Route path="/Sudoku" element={<Sudoku />} />
           </Routes>
       </Router>
-      {/* <Footer /> */}
       </div>
     </>
   );

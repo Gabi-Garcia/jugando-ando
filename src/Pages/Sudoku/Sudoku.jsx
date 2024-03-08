@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import sudoku from 'sudoku';
 import { Link } from 'react-router-dom';
 import './Sudoku.css'
-import MyButton from '../Button/Button'
+import MyButton from '../../components/Button/Button';
 
 const Sudoku = () => {
   const [sudokuBoard, setSudokuBoard] = useState(null);

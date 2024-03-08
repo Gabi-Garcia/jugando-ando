@@ -32,10 +32,10 @@ const UserProfile = () => {
       // Almacena la información del usuario en el LocalStorage
       localStorage.setItem('userInfo', JSON.stringify(userInfo));
       // Redirige a la home de la aplicación
-      navigate('/home');
-    }else if(userInfo.username !== 'juego' && userInfo.password !== 'juego'){
+      navigate('/Home');
+    }else if(userInfo.username !== 'juego' || userInfo.password !== 'juego'){
         alert('Usuario o Contraseña Incorrectas');    
-    }else if (userInfo.username === '' && userInfo.password === ''){
+    }else if (userInfo.username === '' || userInfo.password === ''){
     alert('Debes completar los campos')
     }
   };

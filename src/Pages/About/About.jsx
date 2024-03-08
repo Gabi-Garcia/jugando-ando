@@ -3,10 +3,10 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import './About.css'
-import MyButton from '../../components/Button/Button'
 import { Link } from 'react-router-dom'
 import Footer from '../../components/Footer/Footer';
 
+import MyButton from '../../components/Button/Button';
 
 const About = () => {
   return (
