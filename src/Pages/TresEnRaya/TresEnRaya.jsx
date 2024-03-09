@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './TresEnRaya.css'
-import MyButton from '../../components/Button/Button';
+// import MyButton from '../../components/Button/Button';
 
 
 const TresEnRaya = () => {
@@ -123,9 +123,8 @@ const TresEnRaya = () => {
                         </button>
                         </div>
           </div>
-                       <div className="miButtonTresEnLinea">
-                       <MyButton><Link to="/Home">IR JUEGOS</Link></MyButton>
-                       </div>
+                       <Link to="/Home" className="miButton">IR A JUEGOS</Link>
+                      
     </>
   );
 };

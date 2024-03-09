@@ -1,4 +1,4 @@
-
+@media(min-width: 769px) and (max-width: 1500px){
 .board{
     display: flex;
     justify-content: space-between;
@@ -20,7 +20,7 @@
   position:absolute;
   width:25%;
   color: white;
-  font-size: 2rem;
+  font-size: 2rem; 
   margin-left:825px;
   margin-top: 50px;
   text-align: center;
@@ -46,6 +46,36 @@ button.cell{
   margin: auto;
   margin-left: 57%;
   /* border: 1px solid white; */
+}
+.miButton{
+  position: fixed;
+  text-align: center;
+  width: 150px;
+  height: 30px;
+  margin-left:35px;
+  margin-top:25px;
+  padding-top: 5px;
+  background-color: #3498db; /* Color de fondo azul */
+  color: #fff; /* Color del texto blanco */
+  border: none;
+  border-radius: 10px; /* Bordes redondeados */
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    background-color: #2980b9; /* Color de fondo azul más oscuro al pasar el mouse */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave al pasar el mouse */
+  }
+
+  &:active {
+    transform: translateY(2px); /* Efecto de hundimiento al hacer clic */
+  }
+
+  &:focus {
+    outline: none; /* Elimina el contorno al hacer clic */
+  }
+  /* border: 1px solid green; */
+}
 }
 /******MOBILE****/
 @media(min-width: 320px) and (max-width: 768px){
@@ -108,11 +138,33 @@ button.cell{
   margin-top:40px;
   /* border: 1px solid white; */
 }
-.miButtonTresEnLinea{
-  width: 50%;
-  height: 50px;
-  margin-top: 50px;
-  margin-left: 0px;
+  .miButton{
+    position: fixed;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    margin-left:35px;
+    margin-top:25px;
+    padding-top: 5px;
+    background-color: #3498db; /* Color de fondo azul */
+    color: #fff; /* Color del texto blanco */
+    border: none;
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  
+    &:hover {
+      background-color: #2980b9; /* Color de fondo azul más oscuro al pasar el mouse */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave al pasar el mouse */
+    }
+  
+    &:active {
+      transform: translateY(2px); /* Efecto de hundimiento al hacer clic */
+    }
+  
+    &:focus {
+      outline: none; /* Elimina el contorno al hacer clic */
+    }
   /* border: 1px solid green; */
 }
 }

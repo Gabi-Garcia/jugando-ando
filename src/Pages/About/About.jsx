@@ -6,8 +6,6 @@ import './About.css'
 import { Link } from 'react-router-dom'
 import Footer from '../../components/Footer/Footer';
 
-import MyButton from '../../components/Button/Button';
-
 const About = () => {
   return (
     <>
@@ -29,7 +27,7 @@ const About = () => {
                 </p>
         </div>
             <div className='aboutBoton'>
-            <MyButton><Link to="/Home">IR JUEGOS</Link></MyButton>
+            <Link to="/Home" className="miButton">IR A JUEGOS</Link>
             </div>
             <div className='footerAbout'>
             <Footer />

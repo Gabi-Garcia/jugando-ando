@@ -1,3 +1,4 @@
+@media (min-width:769px)and (max-width:1500px){
 .cajaForm{
     align-items: center;
     justify-content: center;
@@ -44,8 +45,8 @@
     height: 11vh; 
     /* border: 1px solid red; */
     }
-
-
+}
+/****MOBILE*****/
 @media (min-width:320px)and (max-width:768px){
     .cajaForm{
     text-align: center;

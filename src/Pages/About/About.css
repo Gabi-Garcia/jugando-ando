@@ -1,3 +1,4 @@
+@media(min-width:769px) and (max-width:1500px){
 .about{
     text-align: center;
     padding:10px;
@@ -26,6 +27,7 @@ h2{
     margin-top:20px;
     height: 70px;
     /* border: 1px solid green; */
+}
 }
 /*****MOBILE******/
 @media(min-width:320px) and (max-width:768px){
@@ -66,5 +68,4 @@ h2{
         height: 70px;
         /* border: 1px solid green; */
     }
-    
 }

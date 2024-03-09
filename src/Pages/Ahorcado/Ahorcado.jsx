@@ -5,7 +5,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Ahorcado.css';
-import MyButton from '../../components/Button/Button';
 // eslint-disable-next-line no-unused-vars
 //import MiComponente from '../Funciones/MiComponente';
 
@@ -110,7 +109,7 @@ const Ahorcado = () => {
       </div> 
       </div>
     </div>
-      <MyButton><Link to="/Home">IR JUEGOS</Link></MyButton>
+    <Link to="/Home" className="miButton">IR A JUEGOS</Link>
     </>
   );
 };
