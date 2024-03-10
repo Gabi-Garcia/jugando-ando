@@ -2,9 +2,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './TresEnRaya.css'
-// import MyButton from '../../components/Button/Button';
-
+import './TresEnRaya.css';
 
 const TresEnRaya = () => {
   const initialBoard = Array(3).fill(null).map(() => Array(3).fill(null));
@@ -88,7 +86,6 @@ const TresEnRaya = () => {
       setWinner('Empate');
     }
   };
-
   useEffect(() => {
     if (isStarted) {
       checkWinner(board);
