@@ -1,0 +1,29 @@
+
+const linksData = [
+  {
+    path: '/tresEnRaya',
+    imageSrc: '/tres.png',
+    alt: 'Tres en Línea',
+    text: 'Tres en Línea',
+  },
+  {
+    path: '/ahorcado',
+    imageSrc: '/video.png',
+    alt: '¿Cuánto sabes de Música?',
+    text: '¿Cuánto sabes de Música?',
+  },
+  {
+    path: '/sudoku',
+    imageSrc: '/sudoku.png',
+    alt: 'Sudoku',
+    text: 'Sudoku',
+  },
+  {
+    path: '/about',
+    imageSrc: '/conversacion.png',
+    alt: 'About',
+    text: 'About',
+  },
+];
+
+export default linksData;
