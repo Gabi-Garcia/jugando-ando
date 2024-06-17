@@ -1,32 +1,64 @@
 @media(min-width: 769px) and (max-width: 1500px){
-.board{
+.caja{  
+  /* display: flex; */
+  flex-wrap: wrap;
+  width: 100%;
+  height: 80vh;
+  margin: auto;
+  flex-direction: column;
+  /* border: 1px solid violet; */
+}
+
+  .caja > .board{
     display: flex;
     justify-content: space-between;
     width:300px;
     margin: auto;
+    /* border: 1px solid white; */
 }
-
-.caja > .texto{
-  position:absolute;
-  text-align: center;
-  width: 20%;
-  color: white;
-  font-size: 2rem;
-  margin-left:200px;
+.caja > .textos{
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
   margin-top: 50px;
+  margin-left:5%;
+  padding: 5px;
+  /* background-color: rgb(104, 97, 97); */
+  /* border: 1px solid red; */
+}
+.caja > .textos > .texto{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  background-color: rgb(39, 39, 59);
+
+  color: white;
   /* border: 1px solid red; */
 } 
-.caja > .texto2{
-  position:absolute;
-  width:25%;
-  color: white;
-  font-size: 2rem; 
-  margin-left:825px;
-  margin-top: 50px;
+.caja > .textos > .texto2{
+  width:90%;
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
+  color: white;
+  text-align: center;
+  background-color: rgb(41, 41, 80);
+
+  /* border: 1px solid yellow; */
 }
-.texto > p, .texto2 > p{
-  font-size: 2rem;
+.caja > .textos > .texto > p, .texto2 > p{
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+  align-items: center;
+  font-size: 1.5rem;
+ 
   color: white;
 }
 
@@ -48,13 +80,13 @@ button.cell{
   /* border: 1px solid white; */
 }
 .miButton{
-  position: fixed;
+  /* position: fixed; */
   text-align: center;
   width: 150px;
   height: 30px;
   margin-left:35px;
-  margin-top:25px;
-  padding-top: 5px;
+  margin-top:0px;
+  padding: 15px;
   background-color: #3498db; /* Color de fondo azul */
   color: #fff; /* Color del texto blanco */
   border: none;

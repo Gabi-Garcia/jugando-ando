@@ -32,6 +32,7 @@ import { gameReducer, initialState, togglePlayer, checkWinner } from '../gameRed
   
   return (
     <>
+    
         <CajaTresEnRaya
         isStarted={isStarted}
         currentPlayer={currentPlayer}

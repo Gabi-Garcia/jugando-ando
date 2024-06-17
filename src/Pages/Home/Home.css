@@ -1,22 +1,26 @@
 @media(min-width: 769px) and (max-width: 1500px){
 .cajaHome{
-    height: 60vh;
-    /* border: 1px solid yellow; */ 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 0px;
+    /* border: 1px solid yellow;  */
 }
 h1{
     margin: auto;
-    width: 40%;
+    width: 90%;
     text-align: center;
-    font-size: 4rem;
+    font-size: 4.5rem;
     color: white;
-    padding: 10px;
+    padding: 0px;
+    margin-top: 60px;
     /* border: 1px solid white; */
 }
 
-.footerHome > .footer {
+/* .footerHome > .footer {
     margin-top:130px;
-    /* border: 1px solid green; */
-}
+    border: 1px solid green;
+} */
 
 }
 /*****MOBILE*****/

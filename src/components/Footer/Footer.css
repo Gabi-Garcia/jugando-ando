@@ -4,10 +4,10 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
-      width:70vw;
-      margin: auto;
-      border-radius: 5px;
-      height: 15vh; 
+      width:90vw;
+      margin:auto;
+      margin-top: 100px;
+      padding: 20px;
       /* border: 1px solid blue; */
       }
       .footer > ul{
@@ -28,8 +28,8 @@
       }
       .footer > ul > li > a > .imgFooter{
         margin-top: 20px;
-        width:20px;
-        height:20px;
+        width:25px;
+        height:25px;
       }
       .footer > ul > li > a > .imgFooter > img{
         width:100%;
@@ -40,12 +40,13 @@
         box-sizing: border-box;
         width: 40%;
         display: flex;
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         font-weight: bold;
         margin: auto;
-        margin-top: 0px;
+        margin-top: 7px;
         justify-content: center;
         color: black;
+        /* border: 1px solid yellow; */
       }
     }
     

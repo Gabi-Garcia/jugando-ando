@@ -1,15 +1,17 @@
 @media (min-width:769px) and (max-width:1500px){
-.cajaAhorcado{
-    height: 70vh;
-    /* border: 1px solid red; */
-}
+/* .cajaAhorcado{
+    height: 85vh;
+    border: 1px solid red;
+} */
 .subtitulo{
-    width:45%;
+    width:50%;
+    text-align: center;
+    align-items: center;
     margin: auto;
     margin-top: 30px;
-    font-size:1.1rem; 
+    font-size:1.1rem;  
     font-weight: 600;
-    padding: 7px;
+    padding: 10px;
     border-radius: 7px;
     color: white;
     background-color: rgba(19, 18, 18, 0.671);
@@ -33,6 +35,7 @@
     align-items: center;
     width: 55%;
     color: white;
+    /* border: 1px solid violet; */
   
 }
 .segundaCaja > p, .terceraCaja > p{
@@ -40,7 +43,7 @@
     /* text-align: left; */
     margin-left: 10px;
     color: white;
-    width:45%;
+    width:55%;
     padding: 7px;
     border: 1px solid white;
     border-radius: 7px;
