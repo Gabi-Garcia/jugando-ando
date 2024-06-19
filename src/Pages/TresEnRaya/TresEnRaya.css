@@ -1,6 +1,5 @@
 @media(min-width: 769px) and (max-width: 1500px){
 .caja{  
-  /* display: flex; */
   flex-wrap: wrap;
   width: 100%;
   height: 80vh;
@@ -58,7 +57,6 @@
   text-align: center;
   align-items: center;
   font-size: 1.5rem;
- 
   color: white;
 }
 
@@ -68,7 +66,7 @@ button.cell{
     height: 100px;
     padding: 10px; 
     display: block;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 .partida{
   width: 20%;
@@ -76,7 +74,8 @@ button.cell{
   align-items: center;
   justify-content: center; 
   margin: auto;
-  margin-left: 57%;
+  margin-top: 30px;
+  /* margin-left: 57%; */
   /* border: 1px solid white; */
 }
 .miButton{
@@ -109,82 +108,100 @@ button.cell{
   /* border: 1px solid green; */
 }
 }
-/******MOBILE****/
+/***************************************************************************************************************/
+/*************************************************MOBILE********************************************************/
+/***************************************************************************************************************/
 @media(min-width: 320px) and (max-width: 768px){
-  .board{
+  .caja{  
     display: flex;
-    justify-content: center;
-    width:280px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 90vh;
     margin: auto;
+    flex-direction: column;
+    padding: 0px;
+    /* border: 1px solid violet; */
+  }
+  
+    .caja > .board{
+      display: flex;
+      justify-content: center;
+      width:92%;
+      margin: auto;
+      /* border: 1px solid yellow; */
+  }
+  .caja > .textos{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-top: 20px;
+    margin-left:1%;
+    padding: 5px;
     /* border: 1px solid red; */
-}
-.caja > .texto{
-  position:absolute;
-  text-align: center;
-  width: 60%;
-  color:white;
-  font-size: 2rem;
-  margin-left:0px;
-  margin-top: 250px;
-  /* border: 1px solid red; */
-} 
-.caja > .texto2{
-  position:absolute;
-  width:70%;
-  color:black;
-  font-size: 1rem;
-  margin-top:35px;
-  margin-right: 0px;
-  margin-left:38px;
-  background-color:white ;
-  text-align: center;
-  /* border: 1px solid yellow; */
-}
-.texto > p{
-  font-size: 1.5rem;
-  color:white;
-  margin: auto;
-  width: 200px;
-  margin-top: 20px;
-  margin-left:70px;
-} 
-.texto2 > p{
-  font-size: 1.5rem;
-  color:black;
-}
-button.cell{ 
-  background-color: white;
-  width: 60px;
-  height: 60px;
-  padding: 10px; 
-  display: block;
-  border: 1px solid green;
-}
-
-.partida{
-  width: 50%;
-  text-align: center;
-  align-items: center;
-  justify-content: center; 
-  margin-left: 80px;
-  margin-top:40px;
-  /* border: 1px solid white; */
-}
+  }
+  .caja > .textos > .texto{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    background-color: rgb(39, 39, 59);
+    color: white;
+    /* border: 1px solid red; */
+  } 
+  .caja > .textos > .texto2{
+    width:90%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    color: white;
+    text-align: center;
+    background-color: rgb(41, 41, 80);
+    /* border: 1px solid yellow; */
+  }
+  .caja > .textos > .texto > p, .texto2 > p{
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: white;
+  }
+  
+  button.cell{ 
+      background-color: white;
+      width: 100px;
+      height: 100px;
+      padding: 10px; 
+      display: block;
+      /* border: 1px solid green; */
+  }
+  .partida{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+    margin: auto;
+    margin-top: 0px;
+  }
   .miButton{
-    position: fixed;
     text-align: center;
     width: 150px;
     height: 30px;
-    margin-left:35px;
-    margin-top:25px;
-    padding-top: 5px;
+    margin-left:25px;
+    padding: 10px;
+    margin: auto;
+    margin-top:30px;
     background-color: #3498db; /* Color de fondo azul */
     color: #fff; /* Color del texto blanco */
     border: none;
     border-radius: 10px; /* Bordes redondeados */
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  
     &:hover {
       background-color: #2980b9; /* Color de fondo azul más oscuro al pasar el mouse */
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave al pasar el mouse */
@@ -197,6 +214,6 @@ button.cell{
     &:focus {
       outline: none; /* Elimina el contorno al hacer clic */
     }
-  /* border: 1px solid green; */
-}
+    /* border: 1px solid green; */
+  }
 }

@@ -9,7 +9,7 @@ import Footer from '../../components/Footer/Footer';
 const About = () => {
   return (
     <>
-      <div className='caja'> 
+      <div className='cajaAbout'> 
         <div className='about'>
                 <h2>
                   Te damos la bienvenida a nuestro espacio de juegos y aprendizaje

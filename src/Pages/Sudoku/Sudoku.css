@@ -29,12 +29,16 @@
   margin-top: 40px;
   padding: 10px;
   background-color: black;
-  /*margin-top: 50px; */
   border: 1px solid white; 
 }
 }
 /*****MOBILE******/
 @media(min-width:320px) and (max-width:768px){
+    /* .caja{
+        display: flex;
+        position: absolute;
+        border: 1px solid yellow;
+    } */
     .sudoku-board{
         /* margin-top:80px;
         margin-left:500px; */
@@ -61,23 +65,17 @@
         /* border: 1px solid red; */
     }
     .textoSudoku{
-     position: absolute;
-      text-align: center;
-      width: 80%;
-      height: 150px;
-      color: black;
-      font-size: 1.5rem;
-      margin-left:25px;
-      margin-top:40px;
-      padding:0px;
-      background-color: white;
-      /* border: 1px solid red; */
+        position:fixed;
+        text-align: center;
+        width: 250px;
+        height: 200px;
+        color: white;
+        font-size: 1.5rem;
+        margin-top: 40px;
+        margin-left: 20%;
+        margin: auto;
+        padding: 0px;
+        background-color: black;
+        border: 1px solid white; 
     }
-    .miButtonSudoku{
-        width: 50%;
-        height: 50px;
-        margin-top: 50px;
-        margin-left: 0px;
-        /* border: 1px solid green; */
-      }
 }
