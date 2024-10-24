@@ -8,7 +8,7 @@ import TresEnRaya from '../../Pages/TresEnRaya/TresEnRaya'
   return (
     <>
       <div className='caja'>
-                <h1>Tres en Línea</h1>
+                <h1>Tres en Raya</h1>
 
                 <div className='textos'>
                   <div className='texto'>{isStarted && <p>Es el turno de {currentPlayer}</p>}</div>

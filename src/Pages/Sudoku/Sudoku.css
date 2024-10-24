@@ -1,7 +1,5 @@
 @media(min-width:769px) and (max-width:1500px){
 .sudoku-board{
-    /* margin-top:80px;
-    margin-left:500px; */
     margin: auto;
     width: 350px;
     height: 350px;
@@ -34,14 +32,7 @@
 }
 /*****MOBILE******/
 @media(min-width:320px) and (max-width:768px){
-    /* .caja{
-        display: flex;
-        position: absolute;
-        border: 1px solid yellow;
-    } */
     .sudoku-board{
-        /* margin-top:80px;
-        margin-left:500px; */
         margin: auto;
         width: 280px;
         height: 230px;

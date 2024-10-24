@@ -8,7 +8,7 @@ import { handleInputChange, handleSubmit } from '../../Functions/userProfileFunc
 
 const UserProfile = () => {
   const navigate = useNavigate();
-  const [userInfo, setUserInfo] = useState({
+  const [userInfo, setUserInfo] = useState({ 
     username: '',
     password: '',
   });

@@ -10,14 +10,14 @@ export const handleInputChange = (userInfo, setUserInfo) => (e) => {
   export const handleSubmit = (userInfo, navigate) => (e) => {
     e.preventDefault();
     // Validar que se hayan completado los campos requeridos
-    if (userInfo.username === 'juego' && userInfo.password === 'juego') {
+    if (userInfo.username && userInfo.password ) {
       // Almacena la información del usuario en el LocalStorage
       localStorage.setItem('userInfo', JSON.stringify(userInfo));
       // Redirige a la home de la aplicación
       navigate('/Home');
-    } else if (userInfo.username !== 'juego' || userInfo.password !== 'juego') {
-      alert('Usuario o Contraseña Incorrectas');
-    } else if (userInfo.username === '' || userInfo.password === '') {
+    // } else if (userInfo.username !== 'juego' || userInfo.password !== 'juego') {
+    //   alert('Usuario o Contraseña Incorrectas');
+    } else if(userInfo.username ==='' || userInfo.password ==='') {
       alert('Debes completar los campos');
     }
   };
