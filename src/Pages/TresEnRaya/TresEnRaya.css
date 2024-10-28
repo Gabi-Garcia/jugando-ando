@@ -1,44 +1,69 @@
 @media(min-width: 769px) and (max-width: 1500px){
-  .caja > .board{
-    display: flex;
-    justify-content: space-between;
-    width:300px;
+  .CajaTresEnRayaPage{
+    width: 90%;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 30px;
+    /* border: 1px solid red; */
+  }
+  .caja{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    margin-top: 0px;
+    /* border: 1px solid blue; */
+  }
+  .caja h1{
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    /* border: 1px solid yellow; */
+  }
+  .CajaTresEnRayaPage .caja > .board{
+    display: flex;
+    width:70%;
+    margin: auto;
+    margin-top: 0px;
+    justify-content: center;
     /* border: 1px solid white; */
 }
 .caja > .textos{
-  position: absolute;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  width: 25%;
-  margin-top: 50px;
-  margin-left:5%;
-  padding: 5px;
-  /* background-color: rgb(104, 97, 97); */
-  /* border: 1px solid red; */
+  width: fit-content;
+  margin: auto;
+  margin-top: 10px;
+  padding:10px;
+  height: 50px;
+  /* border: 1px solid yellow; */
 }
 .caja > .textos > .texto{
+  width: fit-content;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
-  margin: auto;
-  width: 90%;
   background-color: rgb(39, 39, 59);
   color: white;
   /* border: 1px solid red; */
 } 
 .caja > .textos > .texto2{
-  width:90%;
+  width: fit-content;
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  align-items: center;
   color: white;
-  text-align: center;
   background-color: rgb(41, 41, 80);
-
   /* border: 1px solid yellow; */
 }
 .caja > .textos > .texto > p, .texto2 > p{
@@ -52,28 +77,22 @@
 
 button.cell{ 
     background-color: white;
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     padding: 10px; 
     display: block;
     /* border: 1px solid green; */
 }
-.partida{
-  width: 20%;
+  .partida{
+    margin-top: 50px;
+    width: fit-content;
+    /* border:1px solid violet; */
+  }
+  .buttonButton{
   text-align: center;
   align-items: center;
-  justify-content: center; 
-  margin: auto;
-  margin-top: 30px;
-  /* margin-left: 57%; */
-  /* border: 1px solid white; */
-}
-.miButton{
-  /* position: fixed; */
-  text-align: center;
   width: 150px;
-  height: 30px;
-  margin-left:35px;
+  margin-left:0px;
   margin-top:0px;
   padding: 15px;
   background-color: #3498db; /* Color de fondo azul */
@@ -84,7 +103,34 @@ button.cell{
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
-    background-color: #2980b9; /* Color de fondo azul más oscuro al pasar el mouse */
+    background-color: #2a485c; /* Color de fondo azul más oscuro al pasar el mouse */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave al pasar el mouse */
+  }
+
+  &:active {
+    transform: translateY(2px); /* Efecto de hundimiento al hacer clic */
+  } 
+
+  &:focus {
+    outline: none; /* Elimina el contorno al hacer clic */
+  }
+}
+.CajaTresEnRayaPage .miButton{ 
+  display: flex;
+  text-align: center;
+  width:fit-content;
+  margin-left:0px;
+  margin-top:50px;
+  padding: 15px;
+  background-color: #3498db; /* Color de fondo azul */
+  color: #fff; /* Color del texto blanco */
+  border: none;
+  border-radius: 10px; /* Bordes redondeados */
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    background-color: #2a485c; /* Color de fondo azul más oscuro al pasar el mouse */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave al pasar el mouse */
   }
 

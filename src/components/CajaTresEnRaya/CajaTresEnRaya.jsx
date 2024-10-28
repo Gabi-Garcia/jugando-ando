@@ -9,12 +9,15 @@ import TresEnRaya from '../../Pages/TresEnRaya/TresEnRaya'
     <>
       <div className='caja'>
                 <h1>Tres en Raya</h1>
-
                 <div className='textos'>
                   <div className='texto'>{isStarted && <p>Es el turno de {currentPlayer}</p>}</div>
                   <div className='texto2'>{winner && <p>{winner === 'Empate' ? '¡🤭HAY EMPATE!' : `¡😀 HA GANADO ${winner}!`}</p>}</div> 
                 </div>
-
+                        <div className='partida'>
+                            <button className='buttonButton' onClick={isStarted ? endGame : startGame}>
+                            {isStarted ? 'Terminar Partida' : 'Comenzar Partida'}
+                            </button>
+                        </div>
                 <div className="board">
                     {board.map((row, rowIndex) => (
                       <div key={rowIndex} className="row">
@@ -30,11 +33,6 @@ import TresEnRaya from '../../Pages/TresEnRaya/TresEnRaya'
                       </div>
                     ))}
                 </div>
-                        <div className='partida'>
-                        <button className='buttonButton' onClick={isStarted ? endGame : startGame}>
-                        {isStarted ? 'Terminar Partida' : 'Comenzar Partida'}
-                        </button>
-                        </div>
           </div>
     </>
   )

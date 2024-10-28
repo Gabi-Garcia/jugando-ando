@@ -9,12 +9,14 @@
     border: 1px solid white;
 }
 h2{
-    width: 40%;
+    width: fit-content;
     color: white;
     margin: auto;
+    font-size: 1.7rem;
 }
 .textoAbout{
     padding: 5px;
+    font-size: 1.3rem;
     font-weight: 700;
     color: rgb(223, 217, 217);
 }
@@ -24,7 +26,34 @@ h2{
     margin-top: 100px;
     /* border: 1px solid red; */
 }
-
+.miButton{ 
+    display: flex;
+    text-align: center;
+    width:fit-content;
+    margin-left:70px;
+    margin-top:30px;
+    padding: 15px;
+    background-color: #3498db; /* Color de fondo azul */
+    color: #fff; /* Color del texto blanco */
+    border: none;
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  
+    &:hover {
+      background-color: #2a485c; /* Color de fondo azul más oscuro al pasar el mouse */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave al pasar el mouse */
+    }
+  
+    &:active {
+      transform: translateY(2px); /* Efecto de hundimiento al hacer clic */
+    }
+  
+    &:focus {
+      outline: none; /* Elimina el contorno al hacer clic */
+    }
+    /* border: 1px solid green; */
+  }
 }
 /*****MOBILE******/
 @media(min-width:320px) and (max-width:768px){

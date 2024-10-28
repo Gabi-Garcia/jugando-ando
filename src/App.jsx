@@ -14,7 +14,6 @@ import Sudoku from './Pages/Sudoku/Sudoku';
 const App = () => {
   return (
     <>
-    <div className='imagen'>
       <Router>
           <Routes>
               <Route path="/" element={<UserProfile />} />
@@ -25,7 +24,6 @@ const App = () => {
               <Route path="/Sudoku" element={<Sudoku />} />
           </Routes>
       </Router>
-      </div>
     </>
   );
 };

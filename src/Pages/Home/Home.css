@@ -15,9 +15,14 @@ h1{
     color: white;
     padding: 0px;
     margin-top: 80px;
-    /* border: 1px solid white; */
+    border: 1px solid white;
 }
+ h1 span{
+    font-size: 5rem;
+    font-family:'Courier New', Courier, monospace;
 
+    color: aqua;
+ }
 
 }
 /*****MOBILE*****/
