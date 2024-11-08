@@ -10,19 +10,23 @@
   }
   .caja{
     display: flex;
-    flex-direction: column;
+   flex-direction: column;
     flex-wrap: wrap;
     width: 80%;
     margin: auto;
     margin-top: 0px;
+    padding: 20px;
     /* border: 1px solid blue; */
   }
   .caja h1{
+    font-size: 8rem;
     margin: auto;
-    margin-top: 30px;
+    margin-top:50px;
     display: flex;
     flex-wrap: wrap;
-    width: fit-content;
+ 
+    text-align: center;
+    justify-content: center;
     /* border: 1px solid yellow; */
   }
   .CajaTresEnRayaPage .caja > .board{
@@ -34,11 +38,13 @@
     /* border: 1px solid white; */
 }
 .caja > .textos{
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  width: fit-content;
+  justify-content: center;
+  width: 70%;
   margin: auto;
   margin-top: 10px;
   padding:10px;
@@ -46,7 +52,7 @@
   /* border: 1px solid yellow; */
 }
 .caja > .textos > .texto{
-  width: fit-content;
+ 
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -56,8 +62,9 @@
   /* border: 1px solid red; */
 } 
 .caja > .textos > .texto2{
-  width: fit-content;
   position: absolute;
+  margin: auto;
+  width: fit-content;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -67,12 +74,14 @@
   /* border: 1px solid yellow; */
 }
 .caja > .textos > .texto > p, .texto2 > p{
+  width: fit-content;
   margin: auto;
   padding: 5px;
   text-align: center;
   align-items: center;
   font-size: 1.5rem;
   color: white;
+  /* border: 1px solid green; */
 }
 
 button.cell{ 
@@ -92,8 +101,7 @@ button.cell{
   text-align: center;
   align-items: center;
   width: 150px;
-  margin-left:0px;
-  margin-top:0px;
+  margin: auto;
   padding: 15px;
   background-color: #3498db; /* Color de fondo azul */
   color: #fff; /* Color del texto blanco */
@@ -129,6 +137,7 @@ button.cell{
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
+
   &:hover {
     background-color: #2a485c; /* Color de fondo azul más oscuro al pasar el mouse */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave al pasar el mouse */
@@ -148,108 +157,156 @@ button.cell{
 /*************************************************MOBILE********************************************************/
 /***************************************************************************************************************/
 @media(min-width: 320px) and (max-width: 768px){
-  .caja{  
-    display: flex;
-    flex-wrap: wrap;
+  .CajaTresEnRayaPage{
     width: 100%;
-    height: 90vh;
     margin: auto;
-    flex-direction: column;
-    padding: 0px;
-    /* border: 1px solid violet; */
-  }
-  
-    .caja > .board{
-      display: flex;
-      justify-content: center;
-      width:92%;
-      margin: auto;
-      /* border: 1px solid yellow; */
-  }
-  .caja > .textos{
-    position: absolute;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
-    width: 90%;
-    margin-top: 20px;
-    margin-left:1%;
-    padding: 5px;
+    padding-bottom: 30px;
     /* border: 1px solid red; */
   }
-  .caja > .textos > .texto{
+  .caja{
     display: flex;
+   flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    width: 90%;
-    background-color: rgb(39, 39, 59);
-    color: white;
-    /* border: 1px solid red; */
-  } 
-  .caja > .textos > .texto2{
-    width:90%;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    color: white;
-    text-align: center;
-    background-color: rgb(41, 41, 80);
-    /* border: 1px solid yellow; */
-  }
-  .caja > .textos > .texto > p, .texto2 > p{
-    margin: auto;
-    padding: 5px;
-    text-align: center;
-    align-items: center;
-    font-size: 1.2rem;
-    color: white;
-  }
-  
-  button.cell{ 
-      background-color: white;
-      width: 100px;
-      height: 100px;
-      padding: 10px; 
-      display: block;
-      /* border: 1px solid green; */
-  }
-  .partida{
-    width: 50%;
-    text-align: center;
-    align-items: center;
-    justify-content: center; 
+    width: 80%;
     margin: auto;
     margin-top: 0px;
+    padding: 20px;
+    /* border: 1px solid blue; */
   }
-  .miButton{
-    text-align: center;
-    width: 150px;
-    height: 30px;
-    margin-left:25px;
-    padding: 10px;
+  .caja h1{
+    font-size:4.4rem;
     margin: auto;
-    margin-top:30px;
-    background-color: #3498db; /* Color de fondo azul */
-    color: #fff; /* Color del texto blanco */
-    border: none;
-    border-radius: 10px; /* Bordes redondeados */
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    &:hover {
-      background-color: #2980b9; /* Color de fondo azul más oscuro al pasar el mouse */
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave al pasar el mouse */
-    }
-  
-    &:active {
-      transform: translateY(2px); /* Efecto de hundimiento al hacer clic */
-    }
-  
-    &:focus {
-      outline: none; /* Elimina el contorno al hacer clic */
-    }
-    /* border: 1px solid green; */
+    margin-top:0px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    /* border: 1px solid yellow; */
   }
+  .CajaTresEnRayaPage .caja > .board{
+    display: flex;
+    width:70%;
+    margin: auto;
+    margin-top: 0px;
+    justify-content: center;
+    /* border: 1px solid white; */
+}
+.caja > .textos{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 15px;
+  padding:10px;
+  height: 50px;
+  /* border: 1px solid yellow; */
+}
+.caja > .textos > .texto{
+ 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(39, 39, 59);
+  color: white;
+  /* border: 1px solid red; */
+} 
+.caja > .textos > .texto2{
+  position: absolute;
+  margin: auto;
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(41, 41, 80);
+  /* border: 1px solid yellow; */
+}
+.caja > .textos > .texto > p, .texto2 > p{
+  width: fit-content;
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+  align-items: center;
+  font-size: 1.3rem;
+  color: white;
+  /* border: 1px solid green; */
+}
+
+button.cell{ 
+    background-color: white;
+    width: 90px;
+    height: 90px;
+    padding: 10px; 
+    display: block;
+    /* border: 1px solid green; */
+}
+  .partida{
+    margin-top: 30px;
+    width: fit-content;
+    /* border:1px solid violet; */
+  }
+  .buttonButton{
+  text-align: center;
+  align-items: center;
+  width: 150px;
+  margin: auto;
+  padding: 15px;
+  background-color: #3498db; /* Color de fondo azul */
+  color: #fff; /* Color del texto blanco */
+  border: none;
+  border-radius: 10px; /* Bordes redondeados */
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  animation: none;
+  &:hover {
+    background-color: #2a485c; /* Color de fondo azul más oscuro al pasar el mouse */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave al pasar el mouse */
+  }
+
+  &:active {
+    transform: translateY(2px); /* Efecto de hundimiento al hacer clic */
+  } 
+
+  &:focus {
+    outline: none; /* Elimina el contorno al hacer clic */
+  }
+}
+.CajaTresEnRayaPage .miButton{ 
+  display: flex;
+  text-align: center;
+  width:fit-content;
+  margin-left:0px;
+  margin-top:30px;
+  padding: 15px;
+  background-color: #3498db; /* Color de fondo azul */
+  color: #fff; /* Color del texto blanco */
+  border: none;
+  border-radius: 10px; /* Bordes redondeados */
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+
+  &:hover {
+    background-color: #2a485c; /* Color de fondo azul más oscuro al pasar el mouse */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave al pasar el mouse */
+  }
+
+  &:active {
+    transform: translateY(2px); /* Efecto de hundimiento al hacer clic */
+  }
+
+  &:focus {
+    outline: none; /* Elimina el contorno al hacer clic */
+  }
+  /* border: 1px solid green; */
+}
 }

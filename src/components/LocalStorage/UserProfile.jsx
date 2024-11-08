@@ -15,7 +15,9 @@ const UserProfile = () => {
   return (
     <>
     <div className='cajaForm'>
-      <p>¡Te damos la bienvenida a nuestra aplicación de juegos! Para comenzar la diversión,simplemente ingresa tu nombre de usuario y contraseña! </p>
+      <p>¡Te damos la bienvenida a nuestra aplicación de juegos! Para comenzar la diversión,
+        simplemente crea un nombre de usuario y contraseña!
+        </p>
       <form  className="formulario"onSubmit={handleSubmit(userInfo, navigate)}>
         <label>
           Usuario:

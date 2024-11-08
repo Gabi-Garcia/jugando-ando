@@ -13,17 +13,19 @@
     /* border: 1px solid black; */
 }
 .cajaAhorcado .cajaCabecera{
-    width: 70%;
+    width:fit-content;
     margin: auto;
     margin-top: 50px;
     padding: 0px;
     /* border: 1px solid yellow; */
 }
 .cajaAhorcado .cajaCabecera h1{
-    font-size:5rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-size:7rem;
     margin-top: 0px;
+    width:100%;
     margin: auto;
-    width: fit-content;
     /* border: 1px solid blue; */
 }
 .subtitulo{

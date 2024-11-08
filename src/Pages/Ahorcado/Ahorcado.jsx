@@ -95,7 +95,7 @@ const Ahorcado = () => {
     <>
     <div className='cajaAhorcado'>
       <div className='cajaCabecera'>
-          <h1>¿Lo tienes?</h1>
+          <h1>¿Lo sabes?</h1>
           <p className='subtitulo'>Tienes <span>6</span> oportunidades por cada palabra</p>
       </div>
       <div className='caja2'>

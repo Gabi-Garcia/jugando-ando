@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Silkscreen:wght@400;700&display=swap');
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -20,4 +21,18 @@ a{
   text-decoration: none;
   color: white;
 }
-
+@keyframes upDown {
+  0% {
+      transform: translateY(0px);
+  }
+  50% {
+      transform: translateY(10px); /* Ajusta el valor según la distancia deseada */
+  }
+  100% {
+      transform: translateY(0px);
+  }
+}
+.miButton{ 
+  box-shadow: 4px 4px 50px rgba(17, 0, 255, 0.808);
+  animation: upDown 3s ease-in-out infinite;
+}
