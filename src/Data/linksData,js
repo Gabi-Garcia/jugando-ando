@@ -3,8 +3,8 @@ const linksData = [
   {
     path: '/tresEnRaya',
     imageSrc: '/tres.png',
-    alt: 'Tres en Línea',
-    text: 'Tres en Línea',
+    alt: 'Tres en Raya',
+    text: 'Tres en Raya',
   },
   {
     path: '/ahorcado',

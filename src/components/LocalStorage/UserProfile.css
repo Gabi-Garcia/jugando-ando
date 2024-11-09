@@ -16,7 +16,7 @@
     color: white;
     font-size: 1.5rem;
     padding: 10px;
-    width: 60%;
+    width: 70%;
     background-color: black;
     border: 1px solid white;
     /* border: 1px solid red; */
@@ -31,54 +31,79 @@
     color: white;
     width: 60%;
     height: 35vh;
-    /* border: 1px solid yellow; */
+    /* border: 1px solid yellow;  */
+}
+.cajaForm >.formulario >input{
+    width: 150px;
+    /* border: 1px solid green; */
 }
 }
 /****MOBILE*****/
 @media (min-width:320px)and (max-width:768px){
     .cajaForm{
-    text-align: center;
-    width: 90%;
-    height: 70vh;
-    padding:0px 0px 0px 0px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; 
-    margin: auto;
-    margin-top: 30px;
-    /* border: 1px solid blue; */
-}
-.cajaForm > p{
-    color: white;
-    font-size: 1.1rem;
-    padding: 10px;
-    width: 90%;
-    /* height: 80vh; */
-    margin: auto;
-    background-color: black;
-    border: 1px solid white;
-}
-.cajaForm >.formulario{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px; 
-    color: white;
-    width: 80%;
-    margin: auto;
-    margin-top: 10px;
-    padding: 10px;
-    /* border: 1px solid yellow; */
-}
-input{
-    margin: auto;
-    width: 30%;
-    height:20px;
-}
-.footerUserProfile > .footer{
-    background: white;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+        margin:auto;
+        padding-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-wrap: wrap; 
+        /* border: 1px solid red; */
     }
-
+    .cajaForm > p{
+        color: white;
+        font-size: 1.3rem;
+        padding: 10px;
+        width: 90%;
+        background-color: black;
+        border: 1px solid white;
+        /* border: 1px solid red; */
+    }
+    .cajaForm >.formulario{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: white;
+        width: 80%;
+        /* border: 1px solid yellow;  */
+    }
+    .cajaForm >.formulario >input{
+        padding: 10px;
+        width: 150px;
+        /* border: 1px solid green; */
+    }
+    .buttonButton{
+        text-align: center;
+        align-items: center;
+        width: 150px;
+        margin: auto;
+        margin-top: 30px;
+        padding: 15px;
+        background-color: #3498db; /* Color de fondo azul */
+        color: #fff; /* Color del texto blanco */
+        border: none;
+        border-radius: 10px; /* Bordes redondeados */
+        cursor: pointer;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 4px 4px 50px rgba(17, 0, 255, 0.808);
+        animation: upDown 3s ease-in-out infinite;
+        &:hover {
+          background-color: #2a485c; /* Color de fondo azul más oscuro al pasar el mouse */
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave al pasar el mouse */
+        }
+      
+        &:active {
+          transform: translateY(2px); /* Efecto de hundimiento al hacer clic */
+        } 
+      
+        &:focus {
+          outline: none; /* Elimina el contorno al hacer clic */
+        }
+      }
 }

@@ -6,39 +6,54 @@
     margin-top: 0px;
     /* border: 1px solid yellow;  */
 }
-h1{
+.cajaHome .cajaH1{
+    width: 80%;
     margin: auto;
-    width: 90%;
+    /* border: 1px solid yellow; */
+}
+h1{
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
     text-align: center;
-    font-size: 4.5rem;
-    color: white;
+    font-size: 8rem;
+    color: rgb(143, 240, 232);
+    font-family:'Courier New', Courier, monospace;
     padding: 0px;
-    margin-top: 60px;
-    /* border: 1px solid white; */
+    margin-top: 50px;
+    text-shadow: 4px 4px 50px rgba(17, 0, 255, 0.808);
+    word-spacing: -40px;
+    /* border: 1px solid red; */
 }
-
-
 }
-/*****MOBILE*****/
+/**********************************************************************************************************************/
+/***********************************************MOBILE****************************************************************/
+/**********************************************************************************************************************/
 @media(min-width: 320px) and (max-width: 768px){
     .cajaHome{
-        height: 80vh;
-        /* border: 1px solid green; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 0px;
+        /* border: 1px solid yellow;  */
+    }
+    .cajaHome .cajaH1{
+        width: 100%;
+        margin: auto;
+        /* border: 1px solid yellow; */
     }
     h1{
+        width: 100%;
+        flex-wrap: wrap;
         margin: auto;
-        margin-top: 0px;
-        width: 90%;
         text-align: center;
-        font-size: 2.5rem;
-        color: white;
-        padding-top: 20px;
-        /* border: 1px solid white; */
-    }
-   
-    .footerHome > .footer{
-        margin-top:20px;
-        background-color: white;
-        /* border: 1px solid green; */
-    }
+        font-size: 4.4rem;
+        color: rgb(143, 240, 232);
+        font-family:'Courier New', Courier, monospace;
+        padding: 0px;
+        margin-top: 40px;
+        text-shadow:4px 4px 50px rgba(17, 0, 255, 0.808); 
+        word-spacing: -30px;
 }
+    }

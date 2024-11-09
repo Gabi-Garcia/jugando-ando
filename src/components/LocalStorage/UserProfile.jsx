@@ -8,14 +8,16 @@ import { handleInputChange, handleSubmit } from '../../Functions/userProfileFunc
 
 const UserProfile = () => {
   const navigate = useNavigate();
-  const [userInfo, setUserInfo] = useState({
+  const [userInfo, setUserInfo] = useState({ 
     username: '',
     password: '',
   });
   return (
     <>
     <div className='cajaForm'>
-      <p>¡Te damos la bienvenida a nuestra aplicación de juegos! Para comenzar la diversión,simplemente ingresa tu nombre de usuario y contraseña! </p>
+      <p>¡Te damos la bienvenida a nuestra aplicación de juegos! Para comenzar la diversión,
+        simplemente crea un nombre de usuario y contraseña!
+        </p>
       <form  className="formulario"onSubmit={handleSubmit(userInfo, navigate)}>
         <label>
           Usuario:

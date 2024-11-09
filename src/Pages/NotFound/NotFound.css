@@ -1,0 +1,58 @@
+
+.caja404{
+    width: 95%;
+    margin: auto;
+    padding-bottom: 50px;
+    /* border: 1px solid aqua; */
+}
+.caja404 h1{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    width: 95%;
+    margin: auto;
+    margin-top: 70px;
+    text-align: center;
+    justify-content: center;
+    word-spacing: 0px;
+    /* border: 1px solid yellow; */
+}
+
+.caja404 p{
+    color: white;
+    font-size: 1.3rem;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    margin-top: 80px;
+    /* border: 1px solid red; */
+}
+.caja404 .miButton{ 
+    display: flex;
+    text-align: center;
+    width:fit-content;
+    margin-left:70px;
+    margin: auto;
+    margin-top:70px;
+    padding: 15px;
+    background-color: #3498db; /* Color de fondo azul */
+    color: #fff; /* Color del texto blanco */
+    border: none;
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  
+    &:hover {
+      background-color: #2a485c; /* Color de fondo azul más oscuro al pasar el mouse */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave al pasar el mouse */
+    }
+  
+    &:active {
+      transform: translateY(2px); /* Efecto de hundimiento al hacer clic */
+    }
+  
+    &:focus {
+      outline: none; /* Elimina el contorno al hacer clic */
+    }
+    /* border: 1px solid green; */
+  }

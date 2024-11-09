@@ -32,17 +32,18 @@ import { gameReducer, initialState, togglePlayer, checkWinner } from '../gameRed
   
   return (
     <>
-    
-        <CajaTresEnRaya
-        isStarted={isStarted}
-        currentPlayer={currentPlayer}
-        winner={winner}
-        board={board}
-        handleClick={handleClick}
-        startGame={startGame}
-        endGame={endGame}
-      />
-      <Link to="/Home" className="miButton">IR A JUEGOS</Link>         
+        <div className='CajaTresEnRayaPage'>
+                <CajaTresEnRaya
+                    isStarted={isStarted}
+                    currentPlayer={currentPlayer}
+                    winner={winner}
+                    board={board}
+                    handleClick={handleClick}
+                    startGame={startGame}
+                    endGame={endGame}
+                    />
+                <Link to="/Home" className="miButton">IR A JUEGOS</Link>          
+        </div>
     </>
   );
 };
