@@ -55,47 +55,62 @@ h2{
     /* border: 1px solid green; */
   }
 }
-/*****MOBILE******/
+/*********************************************************************************************************************/
+/*******************************************MOBILE********************************************************************/
+/*********************************************************************************************************************/
 @media(min-width:320px) and (max-width:768px){
-    .cajaAbout{
-        height: 70vh;
-        /* border: 1px solid red; */
-    }
-    .cajaAbout > .about{
+    .about{
         text-align: center;
-        padding:0px;
+        padding:10px;
         width: 90%;
         margin: auto;
-        margin-top: 10px;
-        padding: 10px;
+        margin-top: 100px;
         background-color: black;
         border: 1px solid white;
-    } 
-    .cajaAbout >  .about h2{
-        width: 90%;
-        font-size: 1.2rem;
+    }
+    h2{
+        width: fit-content;
         color: white;
         margin: auto;
+        font-size: 1.5rem;
     }
-    .cajaAbout >  .about > .textoAbout{
+    .textoAbout{
         padding: 5px;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         color: rgb(223, 217, 217);
     }
-    .cajaAbout > .aboutBoton{
-        width: 60%;
-        margin-top: 50px;
-        /* border: 1px solid red; */
-    }
-    .cajaAbout > .footerAbout{
+    /* .cajaAbout > .aboutBoton{
+        width: 30%;
+        height: 70px;
         margin-top: 100px;
-        height: 15vh;
-        /* border: 1px solid yellow; */
+        border: 1px solid red;
+    } */
+    .miButton{ 
+        display: flex;
+        text-align: center;
+        width:fit-content;
+        margin-left:70px;
+        margin-top:30px;
+        padding: 15px;
+        background-color: #3498db; /* Color de fondo azul */
+        color: #fff; /* Color del texto blanco */
+        border: none;
+        border-radius: 10px; /* Bordes redondeados */
+        cursor: pointer;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      
+        &:hover {
+          background-color: #2a485c; /* Color de fondo azul más oscuro al pasar el mouse */
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave al pasar el mouse */
+        }
+      
+        &:active {
+          transform: translateY(2px); /* Efecto de hundimiento al hacer clic */
+        }
+      
+        &:focus {
+          outline: none; /* Elimina el contorno al hacer clic */
+        }
+        /* border: 1px solid green; */
+      }
     }
-    .cajaAbout > .footerAbout >  .footer{
-        margin-top: 0px;
-        background-color: white;
-        width: 100%;
-        border: 1px solid white;
-    } 
-}
